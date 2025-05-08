@@ -1,11 +1,23 @@
+body{
+  padding-top: 120px;
+}
+
 .container{
-    height: 2340px;
-    width: 1440px;
+    height: 1920px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
     background-color: #EADEC5;
 }
 
-.top-header{
-    height: 50px;
+.fixed-top-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050; /* cao hơn các phần tử khác */
+  background-color: #EADEC5; /* tránh bị trong suốt */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .top-bar {
@@ -45,6 +57,13 @@
     padding: 0.5rem 1rem;
 }
 
+.navbar-nav.flex-row li {
+  margin-right: 10rem;
+}
+.navbar-nav.flex-row li:last-child {
+  margin-right: 0; /* bỏ margin thừa ở cuối */
+}
+
 .hmenu{
   padding: 8px 16px;
   display: flex;
@@ -61,4 +80,93 @@
 .hmenu ul li a{
   font-weight: bold;
   display: flex;
+}
+
+.banner-img{
+  width: 100%;
+  border-radius: 1%;
+}
+
+.price-offer{
+  width: 100%;
+  border-radius: 1%;
+  margin-top: 25px;
+}
+
+.text-section{
+  padding-right: 10rem;
+  order: 1;
+}
+
+.img-section{
+  width: 100%;
+  margin-bottom: 2rem;
+  order: 2;
+}
+
+.img-blog-food{
+  width: 48.5%;
+  height: auto;
+  border-radius: 1%;
+  margin-right: 1rem;
+}
+
+.custom-link{
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.custom-link:hover{
+  text-decoration: underline;
+}
+
+.text-title-download{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.img-download{
+  width: 75%;
+  height: auto;
+}
+
+.text-description-download{
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.icon-social{
+  width: 40px;
+  height: auto;
+  margin-right: 35px;
+  margin-top: 25px;
+}
+
+.footer{
+  background-color: rgb(38, 38, 38);
+  color: white;
+  width: 100%;
+  height: auto;
+}
+
+.text-footer1{
+  color: rgb(173, 171, 171);
+}
+
+.text-footer2{
+  margin-top: 25px;
+}
+
+.text-footer2 ul{
+  list-style-type: none;
+}
+
+.text-footer2 ul li a{
+  text-decoration: none;
+  color: grey;
+}
+
+.text-footer2 ul li a:hover{
+  text-decoration: underline;
 }

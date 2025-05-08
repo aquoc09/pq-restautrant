@@ -7,19 +7,24 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #EADEC5;">
     <!-- Inject Javascript -->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <!-- Header -->
-    <div class="container">
+    <div class="fixed-top-wrapper">
         <div class="top-bar">
             <a href=""><i class="bi bi-info-circle-fill"></i>Trợ giúp</a>
             <a href=""><i class="bi bi-person-circle"></i>Đăng nhập</a>
         </div>
                         <!-- navbar-expand-lg -->
-        <nav class="navbar                      navbar-custom">
+        <nav class="navbar                      navbar-custom" >
             <div class="container-fluid">
                 <!-- Logo -->
                 <a class="navbar-brand d-flex align-items-center" href="#">
@@ -28,17 +33,17 @@
 
                 <div class="hmenu navbar-expand-lg d-none d-lg-block">
                     <ul class="navbar-nav flex-row">
-                      <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Ưu Đãi</a>
-                      </li>
-                      <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Thực Đơn</a>
-                      </li>
-                      <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Đặt Bàn</a>
-                      </li>
+                    </li>
                     </ul>
-                  </div>
+                </div>
 
                 <!-- Toggle button (hamburger menu) -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
@@ -68,6 +73,70 @@
             </div>
         </nav>
     </div>
+    <!-- Main content -->
+    <div class="container" >
+        <!-- Banner -->
+        <div class="">
+            <img src="./img/banner/banner.png" alt="" class="banner-img">
+        </div>
+        <!-- Price offer -->
+        <div class="">
+            <a href="#"><img src="./img/banner/price-offer.png" alt="" class="price-offer"></a>
+        </div>
+        <!-- Blog info -->
+        <div class="row align-items-start" style="margin-top: 50px;">
+            <div class="col-md-7 text-section">
+                <h4><strong>Quán Ăn Nhật Bản</strong></h4>
+                <p>
+                    PQ – Nhà hàng Nhật Bản chuẩn vị giữa lòng thành phố sẽ đưa bạn lạc vào thế giới ẩm thực tinh tế và đậm đà bản sắc của xứ sở hoa anh đào. Nếu đã một lần thưởng thức những món ăn tại PQ, bạn sẽ khó lòng quên được hương vị “say mê” của các món sashimi tươi rói, sushi cuộn tinh tế, hay những lát bò Wagyu nướng chín vừa mềm tan trên đầu lưỡi.
+                    Tại PQ, mỗi món ăn đều là một tác phẩm nghệ thuật được chế biến tỉ mỉ, hòa quyện giữa nguyên liệu thượng hạng và phong cách trình bày tinh tế của người Nhật. Không chỉ có món chính, các món kèm như súp miso, tempura giòn rụm, bánh xèo Nhật Bản (okonomiyaki) hay lẩu shabu thanh ngọt cũng góp phần mang lại trải nghiệm ẩm thực trọn vẹn.
+                    Hãy để PQ đánh thức mọi giác quan của bạn với những hương vị chuẩn Nhật và không gian đậm chất Tokyo ngay giữa thành phố!
+                </p>
+                <a href="#" class="custom-link">Xem thực đơn</a>
+            </div>
+            <div class="col-md-5 d-flex flex-row img-section">
+                <img src="./img/food/blog-food.png" alt="" class="img-blog-food" >
+                <img src="./img/food/blog-tamago.png" alt="" class="img-blog-food" >
+            </div>
+        </div>
+
+        <div class="text-center">
+            <h3 class="text-title-download"><strong>Tải App PQ Food</strong></h3>
+            <div class="d-flex justify-content-center flex-wrap">
+                <a href="#" ><img src="./img/icon/download-appstore.png" alt="" class="img-fluid img-download"></a>
+                <a href="#" ><img src="./img/icon/download-chplay.png" alt="" class="img-fluid img-download"></a>
+            </div>
+            <p class="text-muted text-description-download">PQ Food – Ứng dụng cho tín đồ ẩm thực.Tải App Hôm Nay Chạm Ngay Ưu Đãi.</p>
+            <div class="d-flex justify-content-center">
+                <a href="#"><img src="./img/icon/fb_icon.png" alt="facebook" class="icon-social"></a>
+                <a href="#"><img src="./img/icon/ig_icon.png" alt="instagram" class="icon-social"></a>
+                <a href="#"><img src="./img/icon/zalo_icon.png" alt="zalo" class="icon-social"></a>
+              </div>
+        </div>
+    </div>
+
+    <div class="footer row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4" style="margin-top: 25px;">
+            <h6>CÔNG TY CỔ PHẦN TẬP ĐOÀN PQ</h6>
+            <p class="text-footer1">Trụ sở chính: Số 22, Đường Phạm Hùng, Quận 8, Thành phố Hồ Chí Minh, Việt Nam VPGG: Tầng 3, Trường STU, Số 10 Trường Đại Học, T.Phuc , A.Quốc, TP Hồ Chí Minh, Việt Nam.
+                 Chịu trách nhiệm nội dung: (Ông) Nguyễn Võ Anh Quốc
+                 GPĐK: 0000000 cấp ngày 01/01/2004
+                 ĐT: 012 234 56789 Email: support.pqht@ggg.com.vn</p>
+        </div>
+        <div class="col-md-3 text-footer2" style="margin-top: 25px;">
+            <h6>Hỗ Trợ Khách Hàng</h6>
+            <ul>
+                <li><a href="">Điều Khoản sử dụng</a></li>
+                <li><a href="">Chính sách thành viên</a></li>
+                <li><a href="">Chính sách bảo mật</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3" style="margin-top: 25px;">
+            <h6>© 2011 Golden Gate ., JSC. All rights reserved</h6>
+        </div>
+    </div>
+    
     
 </body>
 </html>
