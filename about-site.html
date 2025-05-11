@@ -3,9 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Về PQ Restaurant</title>
 </head>
-<body>
+<body style="background-color: #EADEC5;">
+    <!-- Inject Javascript -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Header -->
+    <div class="fixed-top-wrapper">
+        <div class="top-bar">
+            <a href=""><i class="bi bi-info-circle-fill"></i>Trợ giúp</a>
+            <a href=""><i class="bi bi-person-circle"></i>Đăng nhập</a>
+        </div>
+                        <!-- navbar-expand-lg -->
+        <nav class="navbar                      navbar-custom" >
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <div class="logo"></div>
+                </a>
+
+                <div class="hmenu navbar-expand-lg d-none d-lg-block">
+                    <ul class="navbar-nav flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ưu Đãi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Thực Đơn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Đặt Bàn</a>
+                    </li>
+                    </ul>
+                </div>
+
+                <!-- Toggle button (hamburger menu) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ưu Đãi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Thực Đơn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Đặt Bàn</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Về chúng tôi</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Tin tức</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Main content -->
+    <div class="container" style="height: 2240px;" >
+        <!-- Banner -->
+        <div class="">
+            <img src="./img/banner/banner-about-site.png" alt="" class="banner-img">
+        </div>
+        <!-- Blog info 1 -->
+        <div class="row align-items-start" style="margin-top: 50px;">
+            <div class="col-md-7 text-section">
+                <p>
+                    Ẩm thực Nhật Bản nổi bật với sự tinh tế và cân bằng, trong đó Udon
+                    , cơm cà ri và cơm trắng là những món ăn quen thuộc. Udon là loại mì sợi to, dai
+                    , thường được dùng với nước dùng nóng kèm tempura hoặc thịt. Cơm cà ri Nhật có hương vị nhẹ
+                    , béo và hơi ngọt, được ăn kèm với cơm trắng và thịt hoặc rau.
+                     Cơm trắng (gohan) là món ăn cơ bản không thể thiếu trong mỗi bữa ăn
+                    , được nấu từ gạo Nhật mềm và dẻo, thường ăn kèm với nhiều món phụ khác.
+                </p>
+            </div>
+            <div class="col-md-5 img-section">
+                <img src="./img/pics/pic1.png" alt="" class="img-blog-food" >
+            </div>
+        </div>
+
+        <!-- Blog info 2 -->
+        <div class="row align-items-start" style="margin-top: 50px;">
+            <div class="col-md-5 img-section">
+                <img src="./img/pics/pic3.png" alt="" class="img-blog-food" >
+            </div>
+            <div class="col-md-7 text-section">
+                <p>
+                    PQ Restaurant hân hạnh giới thiệu các món ăn đặc trưng của ẩm thực Nhật Bản.
+                     Những sợi mì Udon dày dặn, mềm mại được chan ngập nước dùng thanh đạm
+                    , mang đến cảm giác ấm áp và thân tình. Cơm cà ri Nhật Bản đậm đà với nước sốt thơm nồng
+                    , quyện cùng miếng thịt hảo hạng và rau củ mềm ngọt, tạo nên dư vị khó quên.
+                     Cơm trắng dẻo thơm với hạt gạo căng mọng như tinh túy lúa gạo Nhật, hoàn thiện trải nghiệm ẩm thực trọn vẹn.
+                      Tất cả kết hợp hài hòa mang đến trải nghiệm ẩm thực tinh tế và trang nhã, đậm đà bản sắc Nhật
+                    , truyền cảm hứng cho thực khách tận hưởng từng khoảnh khắc thưởng thức.
+                </p>
+            </div>
+        </div>
+
+        <!-- Blog info 3 -->
+        <div class="row align-items-start" style="margin-top: 50px;">
+            <div class="col-md-7 text-section">
+                <p>
+                    Mời bạn ghé thăm PQ Restaurant – nơi lưu giữ hương vị Nhật Bản tinh tế trong từng món ăn.
+                     Giữa không gian ấm cúng và thanh lịch, chúng tôi mong được chia sẻ với bạn những bữa ăn đậm đà,
+                      nhẹ nhàng như một lời chào từ đất nước Mặt Trời mọc.
+                       Hãy đến và cảm nhận sự trân trọng trong từng chi tiết – từ bát mì Udon thơm nghi ngút,
+                        đến đĩa cơm cà ri đậm đà hay chén cơm trắng dẻo thơm.
+                     PQ rất hân hạnh được đón tiếp bạn.
+                </p>
+            </div>
+            <div class="col-md-5 img-section">
+                <img src="./img/pics/pic2.png" alt="" class="img-blog-food" >
+            </div>
+        </div>
+
+        <!-- Last pic -->
+         <img src="img/pics/pic4.png" alt="" class="justify-content-center last-img">
+
+    </div>
+    <!-- Footer -->
+    <div class="footer row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4" style="margin-top: 25px; margin-left: 15px;">
+            <h6>CÔNG TY CỔ PHẦN TẬP ĐOÀN PQ</h6>
+            <p class="text-footer1">Trụ sở chính: Số 22, Đường Phạm Hùng,Quận 8, Thành phố Hồ Chí Minh, Việt NamVPGG: Tầng 3, Trường STU, Số 10 Trường Đại Học, T.Phuc, A.Quốc, TP Hồ Chí Minh, Việt Nam.
+                Chịu trách nhiệm nội dung: (Ông) Nguyễn Võ Anh Quốc
+                GPĐK: 0000000 cấp ngày 01/01/2004
+                ĐT: 012 234 56789 Email: support.pqht@ggg.com.vn</p>
+        </div>
+        <div class="col-md-3 text-footer2" style="margin-top: 25px; margin-left: 15px;">
+            <h6>Hỗ Trợ Khách Hàng</h6>
+            <ul>
+                <li><a href="">Điều Khoản sử dụng</a></li>
+                <li><a href="">Chính sách thành viên</a></li>
+                <li><a href="">Chính sách bảo mật</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3" style="margin-top: 25px; margin-left: 15px;">
+            <h6>© 2011 Golden Gate ., JSC. All rights reserved</h6>
+        </div>
+    </div>
+    
     
 </body>
 </html>
