@@ -19,14 +19,14 @@
     <title>Đặt bàn</title>
 </head>
 
-<body>
+<body style="background-color: #EADEC5;">
     <!-- Inject Javascript -->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <!-- Header -->
     <div class="fixed-top-wrapper">
         <div class="top-bar">
-            <a href=""><i class="bi bi-info-circle-fill"></i>Trợ giúp</a>
-            <a href=""><i class="bi bi-person-circle"></i>Đăng nhập</a>
+            <a href="../header-site/register-form.html"><i class="bi bi-info-circle-fill"></i>Đăng kí</a>
+            <a href="../header-site/login-form.html"><i class="bi bi-person-circle"></i>Đăng nhập</a>
         </div>
                         <!-- navbar-expand-lg -->
         <nav class="navbar                      navbar-custom" >
@@ -39,13 +39,13 @@
                 <div class="hmenu navbar-expand-lg d-none d-lg-block">
                     <ul class="navbar-nav flex-row">
                     <li class="nav-item">
-                        <a class="nav-link" href="../menu-link/saleoff.html">Ưu Đãi</a>
+                        <a class="nav-link" href="../menu-site/saleoff.html">Ưu Đãi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../menu-link/order.html">Thực Đơn</a>
+                        <a class="nav-link" href="../menu-site/order.html">Thực Đơn</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../menu-link/booktable.html">Đặt Bàn</a>
+                        <a class="nav-link" href="../menu-site/booktable.html">Đặt Bàn</a>
                     </li>
                     </ul>
                 </div>
@@ -59,7 +59,7 @@
                 <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="../menu-link/saleoff.html">Ưu Đãi</a>
+                            <a class="nav-link" href="../menu-site/saleoff.html">Ưu Đãi</a>
                         </li>
                         <!-- Dropdown menu for Thực Đơn -->
                         <li class="nav-item dropdown">
@@ -68,15 +68,15 @@
                                 Thực Đơn
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="orderDropdown">
-                                <li><a class="dropdown-item" href="../menu-link/order.html">Gọi Món</a></li>
-                                <li><a class="dropdown-item" href="../menu-link/combo.html">Combo</a></li>
+                                <li><a class="dropdown-item" href="../menu-site/order.html">Gọi Món</a></li>
+                                <li><a class="dropdown-item" href="../menu-site/combo.html">Combo</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../menu-link/booktable.html">Đặt Bàn</a>
+                            <a class="nav-link" href="../menu-site/booktable.html">Đặt Bàn</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="../menu-link/about-site.html">Về chúng tôi</a>
+                            <a class="nav-link" href="../menu-site/about-site.html">Về chúng tôi</a>
                         </li>
                     </ul>
                 </div>
@@ -86,52 +86,50 @@
 
     <!-- Breadcrumb -->
     <div class="container py-2">
-        <nav class="breadcrumb-nav small text-muted">
-            <a href="index.html" class="text-decoration-none text-muted">Trang chủ</a> >
-            <a href="login-form.html" class="text-decoration-none text-muted">Đăng nhập</a> >
-            <a href="register-form.html" class="text-decoration-none text-muted">Đăng kí</a>
+        <nav class="breadcrumb-nav small text-muted text-change-page">
+            <a href="../index.html" class="text-decoration-none text-muted">Trang chủ</a> >
+            <a href="../menu-site/booking-form.html" class="text-decoration-none text-muted">Đặt bàn</a> >
+            <a href="#" class="text-decoration-none text-muted">Thông tin đặt bàn</a>
         </nav>
     </div>
 
-    <!-- Login form -->
+    <!-- Booking form -->
     <div class="booking-container">
-        <h2>Đăng kí</h2>
-        <form id="loginForm">
+        <h2>Book a Table</h2>
+        <form id="bookingForm">
             <div class="form-group">
-                <label for="username">Tên đăng nhập:</label>
-                <input type="text" id="username" name="username" required />
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required />
             </div>
 
             <div class="form-group">
-                <label for="password">Mật khẩu:</label>
-                <input type="password" id="password" name="password" required />
-            </div>
-
-            <div class="form-group">
-                <label for="password">Xác nhận mật khẩu:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required />
-            </div>
-
-            <div class="form-group">
-                <label for="password">Họ và tên:</label>
-                <input type="text" id="fullname" name="fullname" required />
-            </div>
-
-            <div class="form-group">
-                <label for="phone">Số điện thoại:</label>
+                <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone" required />
             </div>
 
-            <div class="d-flex justify-content-center">
-                <button type="submit" class="btn-register justify-content-center">Đăng kí</button>
+            <div class="form-group">
+                <label for="date">Booking Date</label>
+                <input type="date" id="date" name="date" required />
             </div>
+
+            <div class="form-group">
+                <label for="time">Booking Time</label>
+                <input type="time" id="time" name="time" required />
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" min="1" required />
+            </div>
+
+            <button type="submit" class="btn-booking">Confirm Booking</button>
         </form>
     </div>
 
     <script>
         document.getElementById("bookingForm").addEventListener("submit", function (e) {
             e.preventDefault();
-            alert("Đăng kí thành công");
+            alert("Thank you for your reservation! We'll contact you soon.");
             this.reset();
         });
     </script>
@@ -150,9 +148,9 @@
         <div class="col-md-3 text-footer2 mt-3 ps-2">
             <h6>Hỗ Trợ Khách Hàng</h6>
             <ul>
-                <li><a href="../footer-link/terms-of-use.html">Điều Khoản sử dụng</a></li>
-                <li><a href="../footer-link/member-policy.html">Chính sách thành viên</a></li>
-                <li><a href="../footer-link/privacy-policy.html">Chính sách bảo mật</a></li>
+                <li><a href="../footer-site/terms-of-use.html">Điều Khoản sử dụng</a></li>
+                <li><a href="../footer-site/member-policy.html">Chính sách thành viên</a></li>
+                <li><a href="../footer-site/privacy-policy.html">Chính sách bảo mật</a></li>
             </ul>
         </div>
         <div class="col-md-3 mt-3 ps-2">
