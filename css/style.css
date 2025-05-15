@@ -1,13 +1,14 @@
-body{
-  padding-top: 120px;
+html, body{
+  padding-top: 60px;
+  background-color: #eeece9 !important;
 }
 
 .container{
-    height: 1920px;
+    height: auto;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
-    background-color: #EADEC5;
+    /* background-color: #eeece9; */
 }
 
 .fixed-top-wrapper {
@@ -16,7 +17,7 @@ body{
   left: 0;
   width: 100%;
   z-index: 1050; /* cao hơn các phần tử khác */
-  background-color: #EADEC5; /* tránh bị trong suốt */
+  background-color: #eeece9; /*tránh bị trong suốt*/
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -94,6 +95,7 @@ body{
   width: 100%;
   height: auto;
   border-radius: 1%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .price-offer{
@@ -184,4 +186,16 @@ body{
 .last-img{
   width: 100%;
   height: auto;
+}
+
+.text-change-page{
+}
+
+.text-change-page a{
+  text-decoration: none;
+  color: grey;
+}
+
+.text-change-page a:hover{
+  text-decoration: underline;
 }

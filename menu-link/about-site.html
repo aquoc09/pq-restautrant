@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <!-- Google font -->
@@ -16,7 +16,7 @@
 </head>
 <body style="background-color: #EADEC5;">
     <!-- Inject Javascript -->
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <!-- Header -->
     <div class="fixed-top-wrapper">
         <div class="top-bar">
@@ -27,20 +27,20 @@
         <nav class="navbar                      navbar-custom" >
             <div class="container-fluid">
                 <!-- Logo -->
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <a class="navbar-brand d-flex align-items-center" href="../index.html">
                     <div class="logo"></div>
                 </a>
 
                 <div class="hmenu navbar-expand-lg d-none d-lg-block">
                     <ul class="navbar-nav flex-row">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ưu Đãi</a>
+                        <a class="nav-link" href="../menu-link/saleoff.html">Ưu Đãi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Thực Đơn</a>
+                        <a class="nav-link" href="../menu-link/order.html">Thực Đơn</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Đặt Bàn</a>
+                        <a class="nav-link" href="../menu-link/booktable.html">Đặt Bàn</a>
                     </li>
                     </ul>
                 </div>
@@ -54,30 +54,36 @@
                 <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Ưu Đãi</a>
+                            <a class="nav-link" href="../menu-link/saleoff.html">Ưu Đãi</a>
+                        </li>
+                        <!-- Dropdown menu for Thực Đơn -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="orderDropdown" 
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Thực Đơn
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="orderDropdown">
+                                <li><a class="dropdown-item" href="../menu-link/order.html">Gọi Món</a></li>
+                                <li><a class="dropdown-item" href="../menu-link/combo.html">Combo</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Thực Đơn</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Đặt Bàn</a>
+                            <a class="nav-link" href="../menu-link/booktable.html">Đặt Bàn</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#">Về chúng tôi</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#">Tin tức</a>
+                            <a class="nav-link" href="../menu-link/about-site.html">Về chúng tôi</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
+
     <!-- Main content -->
     <div class="container" style="height: 2240px;" >
         <!-- Banner -->
         <div class="">
-            <img src="./img/banner/banner-about-site.png" alt="" class="banner-img">
+            <img src="../img/banner/banner-about-site.png" alt="" class="banner-img">
         </div>
         <!-- Blog info 1 -->
         <div class="row align-items-start" style="margin-top: 50px;">
@@ -92,14 +98,14 @@
                 </p>
             </div>
             <div class="col-md-5 img-section">
-                <img src="./img/pics/pic1.png" alt="" class="img-blog-food" >
+                <img src="../img/pics-info-info/pic1.png" alt="" class="img-blog-food" >
             </div>
         </div>
 
         <!-- Blog info 2 -->
         <div class="row align-items-start" style="margin-top: 50px;">
             <div class="col-md-5 img-section">
-                <img src="./img/pics/pic3.png" alt="" class="img-blog-food" >
+                <img src="../img/pics-info/pic3.png" alt="" class="img-blog-food" >
             </div>
             <div class="col-md-7 text-section">
                 <p>
@@ -127,33 +133,33 @@
                 </p>
             </div>
             <div class="col-md-5 img-section">
-                <img src="./img/pics/pic2.png" alt="" class="img-blog-food" >
+                <img src="../img/pics-info/pic2.png" alt="" class="img-blog-food" >
             </div>
         </div>
 
         <!-- Last pic -->
-         <img src="img/pics/pic4.png" alt="" class="justify-content-center last-img">
+         <img src="img/pics-info/pic4.png" alt="" class="justify-content-center last-img">
 
     </div>
     <!-- Footer -->
-    <div class="footer row">
+    <div class="footer row mt-5 ms-0">
         <div class="col-md-1"></div>
-        <div class="col-md-4" style="margin-top: 25px; margin-left: 15px;">
+        <div class="col-md-4 mt-3 ps-2">
             <h6>CÔNG TY CỔ PHẦN TẬP ĐOÀN PQ</h6>
             <p class="text-footer1">Trụ sở chính: Số 22, Đường Phạm Hùng,Quận 8, Thành phố Hồ Chí Minh, Việt NamVPGG: Tầng 3, Trường STU, Số 10 Trường Đại Học, T.Phuc, A.Quốc, TP Hồ Chí Minh, Việt Nam.
                 Chịu trách nhiệm nội dung: (Ông) Nguyễn Võ Anh Quốc
                 GPĐK: 0000000 cấp ngày 01/01/2004
                 ĐT: 012 234 56789 Email: support.pqht@ggg.com.vn</p>
         </div>
-        <div class="col-md-3 text-footer2" style="margin-top: 25px; margin-left: 15px;">
+        <div class="col-md-3 text-footer2 mt-3 ps-2">
             <h6>Hỗ Trợ Khách Hàng</h6>
             <ul>
-                <li><a href="">Điều Khoản sử dụng</a></li>
-                <li><a href="">Chính sách thành viên</a></li>
-                <li><a href="">Chính sách bảo mật</a></li>
+                <li><a href="../footer-link/terms-of-use.html">Điều Khoản sử dụng</a></li>
+                <li><a href="../footer-link/member-policy.html">Chính sách thành viên</a></li>
+                <li><a href="../footer-link/privacy-policy.html">Chính sách bảo mật</a></li>
             </ul>
         </div>
-        <div class="col-md-3" style="margin-top: 25px; margin-left: 15px;">
+        <div class="col-md-3 mt-3 ps-2">
             <h6>© 2011 Golden Gate ., JSC. All rights reserved</h6>
         </div>
     </div>

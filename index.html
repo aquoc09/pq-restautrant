@@ -14,9 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Trang chủ</title>
 </head>
-<body style="background-color: #EADEC5;">
+<body>
     <!-- Inject Javascript -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+
     <!-- Header -->
     <div class="fixed-top-wrapper">
         <div class="top-bar">
@@ -34,13 +35,13 @@
                 <div class="hmenu navbar-expand-lg d-none d-lg-block">
                     <ul class="navbar-nav flex-row">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ưu Đãi</a>
+                        <a class="nav-link" href="./menu-link/saleoff.html">Ưu Đãi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Thực Đơn</a>
+                        <a class="nav-link" href="./menu-link/order.html">Thực Đơn</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Đặt Bàn</a>
+                        <a class="nav-link" href="./menu-link/booktable.html">Đặt Bàn</a>
                     </li>
                     </ul>
                 </div>
@@ -54,25 +55,31 @@
                 <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Ưu Đãi</a>
+                            <a class="nav-link" href="./menu-link/saleoff.html">Ưu Đãi</a>
+                        </li>
+                        <!-- Dropdown menu for Thực Đơn -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="orderDropdown" 
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Thực Đơn
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="orderDropdown">
+                                <li><a class="dropdown-item" href="./menu-link/order.html">Gọi Món</a></li>
+                                <li><a class="dropdown-item" href="./menu-link/combo.html">Combo</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Thực Đơn</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Đặt Bàn</a>
+                            <a class="nav-link" href="./menu-link/booktable.html">Đặt Bàn</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="about-site.html">Về chúng tôi</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#">Tin tức</a>
+                            <a class="nav-link" href="./menu-link/about-site.html">Về chúng tôi</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
+
     <!-- Main content -->
     <div class="container" >
         <!-- Banner -->
@@ -81,7 +88,7 @@
         </div>
         <!-- Price offer -->
         <div class="">
-            <a href="#"><img src="./img/banner/price-offer.png" alt="" class="price-offer"></a>
+            <a href="./menu-link/order.html"><img src="./img/banner/price-offer.png" alt="" class="price-offer"></a>
         </div>
         <!-- Blog info -->
         <div class="row align-items-start" style="margin-top: 50px;">
@@ -95,44 +102,45 @@
                 <a href="#" class="custom-link">Xem thực đơn</a>
             </div>
             <div class="col-md-5 d-flex flex-row img-section">
-                <img src="./img/food/blog-food.png" alt="" class="img-blog-food" >
-                <img src="./img/food/blog-tamago.png" alt="" class="img-blog-food" >
+                <img src="./img/pics-info/blog-set-curry.jpg" alt="" class="img-blog-food" >
+                <img src="./img/pics-info/blog-sushi.jpg" alt="" class="img-blog-food" >
             </div>
         </div>
 
         <div class="text-center">
             <h3 class="text-title-download"><strong>Tải App PQ Food</strong></h3>
             <div class="d-flex justify-content-center flex-wrap">
-                <a href="#" ><img src="./img/icon/download-appstore.png" alt="" class="img-fluid img-download"></a>
-                <a href="#" ><img src="./img/icon/download-chplay.png" alt="" class="img-fluid img-download"></a>
+                <a href="https://www.apple.com/vn/app-store/" target="_blank"><img src="./img/icon/download-appstore.png" alt="" class="img-fluid img-download"></a>
+                <a href="https://play.google.com/store/apps?hl=vi" target="_blank"><img src="./img/icon/download-chplay.png" alt="" class="img-fluid img-download"></a>
             </div>
             <p class="text-muted text-description-download">PQ Food – Ứng dụng cho tín đồ ẩm thực.Tải App Hôm Nay Chạm Ngay Ưu Đãi.</p>
             <div class="d-flex justify-content-center">
-                <a href="#"><img src="./img/icon/fb_icon.png" alt="facebook" class="icon-social"></a>
-                <a href="#"><img src="./img/icon/ig_icon.png" alt="instagram" class="icon-social"></a>
-                <a href="#"><img src="./img/icon/zalo_icon.png" alt="zalo" class="icon-social"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./img/icon/fb_icon.png" alt="facebook" class="icon-social"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./img/icon/ig_icon.png" alt="instagram" class="icon-social"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="./img/icon/yt_icon.png" alt="zalo" class="icon-social"></a>
               </div>
         </div>
     </div>
 
-    <div class="footer row">
+    <!-- Footer -->
+    <div class="footer row mt-5 ms-0">
         <div class="col-md-1"></div>
-        <div class="col-md-4" style="margin-top: 25px; margin-left: 15px;">
+        <div class="col-md-4 mt-3 ps-2">
             <h6>CÔNG TY CỔ PHẦN TẬP ĐOÀN PQ</h6>
             <p class="text-footer1">Trụ sở chính: Số 22, Đường Phạm Hùng,Quận 8, Thành phố Hồ Chí Minh, Việt NamVPGG: Tầng 3, Trường STU, Số 10 Trường Đại Học, T.Phuc, A.Quốc, TP Hồ Chí Minh, Việt Nam.
                 Chịu trách nhiệm nội dung: (Ông) Nguyễn Võ Anh Quốc
                 GPĐK: 0000000 cấp ngày 01/01/2004
                 ĐT: 012 234 56789 Email: support.pqht@ggg.com.vn</p>
         </div>
-        <div class="col-md-3 text-footer2" style="margin-top: 25px; margin-left: 15px;">
+        <div class="col-md-3 text-footer2 mt-3 ps-2">
             <h6>Hỗ Trợ Khách Hàng</h6>
             <ul>
-                <li><a href="terms-of-use.html">Điều Khoản sử dụng</a></li>
-                <li><a href="member-policy.html">Chính sách thành viên</a></li>
-                <li><a href="privacy-policy.html">Chính sách bảo mật</a></li>
+                <li><a href="./footer-link/terms-of-use.html">Điều Khoản sử dụng</a></li>
+                <li><a href="./footer-link/member-policy.html">Chính sách thành viên</a></li>
+                <li><a href="./footer-link/privacy-policy.html">Chính sách bảo mật</a></li>
             </ul>
         </div>
-        <div class="col-md-3" style="margin-top: 25px; margin-left: 15px;">
+        <div class="col-md-3 mt-3 ps-2">
             <h6>© 2011 Golden Gate ., JSC. All rights reserved</h6>
         </div>
     </div>

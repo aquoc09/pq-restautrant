@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Đặt bàn</title>
+</head>
+
+<body>
+    <!-- Inject Javascript -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Header -->
+    <div class="fixed-top-wrapper">
+        <div class="top-bar">
+            <a href=""><i class="bi bi-info-circle-fill"></i>Trợ giúp</a>
+            <a href=""><i class="bi bi-person-circle"></i>Đăng nhập</a>
+        </div>
+                        <!-- navbar-expand-lg -->
+        <nav class="navbar                      navbar-custom" >
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                    <div class="logo"></div>
+                </a>
+
+                <div class="hmenu navbar-expand-lg d-none d-lg-block">
+                    <ul class="navbar-nav flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../menu-link/saleoff.html">Ưu Đãi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../menu-link/order.html">Thực Đơn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../menu-link/booktable.html">Đặt Bàn</a>
+                    </li>
+                    </ul>
+                </div>
+
+                <!-- Toggle button (hamburger menu) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../menu-link/saleoff.html">Ưu Đãi</a>
+                        </li>
+                        <!-- Dropdown menu for Thực Đơn -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="orderDropdown" 
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Thực Đơn
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="orderDropdown">
+                                <li><a class="dropdown-item" href="../menu-link/order.html">Gọi Món</a></li>
+                                <li><a class="dropdown-item" href="../menu-link/combo.html">Combo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../menu-link/booktable.html">Đặt Bàn</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="../menu-link/about-site.html">Về chúng tôi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="container py-2">
+        <nav class="breadcrumb-nav small text-muted">
+            <a href="index.html" class="text-decoration-none text-muted">Trang chủ</a> >
+            <a href="login-form.html" class="text-decoration-none text-muted">Đăng nhập</a>
+        </nav>
+    </div>
+
+    <!-- Login form -->
+    <div class="booking-container">
+        <h2>Đăng nhập</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Tên đăng nhập</label>
+                <input type="text" id="username" name="username" required />
+            </div>
+
+            <div class="form-group">
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" name="password" required />
+            </div>
+
+            <div class="d-flex row justify-content-center gap-3">
+                <button type="submit" class="btn-booking col-md-4 justify-content-center">Đăng nhập</button>
+                <button type="submit" class="btn-register col-md-4 justify-content-center">Đăng kí</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("bookingForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Đăng nhập thành công");
+            this.reset();
+        });
+    </script>
+
+    <!-- Footer -->
+    <div class="footer row mt-5 ms-0">
+        <div class="col-md-1"></div>
+        <div class="col-md-4 mt-3 ps-2">
+            <h6>CÔNG TY CỔ PHẦN TẬP ĐOÀN PQ</h6>
+            <p class="text-footer1">Trụ sở chính: Số 22, Đường Phạm Hùng,Quận 8, Thành phố Hồ Chí Minh, Việt NamVPGG:
+                Tầng 3, Trường STU, Số 10 Trường Đại Học, T.Phuc, A.Quốc, TP Hồ Chí Minh, Việt Nam.
+                Chịu trách nhiệm nội dung: (Ông) Nguyễn Võ Anh Quốc
+                GPĐK: 0000000 cấp ngày 01/01/2004
+                ĐT: 012 234 56789 Email: support.pqht@ggg.com.vn</p>
+        </div>
+        <div class="col-md-3 text-footer2 mt-3 ps-2">
+            <h6>Hỗ Trợ Khách Hàng</h6>
+            <ul>
+                <li><a href="../footer-link/terms-of-use.html">Điều Khoản sử dụng</a></li>
+                <li><a href="../footer-link/member-policy.html">Chính sách thành viên</a></li>
+                <li><a href="../footer-link/privacy-policy.html">Chính sách bảo mật</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 mt-3 ps-2">
+            <h6>© 2011 Golden Gate ., JSC. All rights reserved</h6>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
