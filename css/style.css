@@ -91,6 +91,16 @@ html, body{
   display: flex;
 }
 
+/* Breadcrumb */
+.breadcrumb-nav {
+  font-size: 0.875rem;
+}
+
+.flag-icon {
+  width: 20px;
+  height: 14px;
+}
+
 .banner-img{
   width: 100%;
   height: auto;
@@ -198,4 +208,20 @@ html, body{
 
 .text-change-page a:hover{
   text-decoration: underline;
+}
+/* Coupon image */
+.img-coupon {
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Avatar người dùng */
+.avatar {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
 }
