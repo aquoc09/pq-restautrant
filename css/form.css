@@ -69,3 +69,28 @@
   color: black;
   cursor: pointer;
 }
+.btn-booking-form
+{
+        display: block;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        color: white;
+        background-color: #ffc107;
+        border-radius: 5px;
+        border: none;
+ 
+}
+
+.btn-booking-form:hover
+{
+  background-color: #dfcfb7;
+}
+
+
+
+
+

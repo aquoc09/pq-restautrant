@@ -16,24 +16,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <title>Combo</title>
-
+    <title>Món ăn</title>
 </head>
 
 <body style="background-color: #EADEC5;">
     <!-- Inject Javascript -->
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <!-- jQuery  -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <!-- Header -->
     <div class="fixed-top-wrapper">
         <div class="top-bar">
             <a href="../header-site/register-form.html"><i class="bi bi-info-circle-fill"></i>Đăng kí</a>
             <a href="../header-site/login-form.html"><i class="bi bi-person-circle"></i>Đăng nhập</a>
         </div>
-        <!-- navbar-expand-lg -->
-        <nav class="navbar                      navbar-custom">
+                        <!-- navbar-expand-lg -->
+        <nav class="navbar                      navbar-custom" >
             <div class="container-fluid">
                 <!-- Logo -->
                 <a class="navbar-brand d-flex align-items-center" href="../index.html">
@@ -42,15 +38,15 @@
 
                 <div class="hmenu navbar-expand-lg d-none d-lg-block">
                     <ul class="navbar-nav flex-row">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../menu-site/saleoff.html">Ưu Đãi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../menu-site/order.html">Thực Đơn</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../menu-site/booktable.html">Đặt Bàn</a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../menu-site/saleoff.html">Ưu Đãi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../menu-site/order.html">Thực Đơn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../menu-site/booktable.html">Đặt Bàn</a>
+                    </li>
                     </ul>
                 </div>
 
@@ -67,8 +63,8 @@
                         </li>
                         <!-- Dropdown menu for Thực Đơn -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="orderDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="orderDropdown" 
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Thực Đơn
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="orderDropdown">
@@ -93,12 +89,13 @@
         <nav class="breadcrumb-nav small text-muted">
             <a href="../index.html" class="text-decoration-none text-muted">Trang chủ</a> >
             <a href="#" class="text-decoration-none text-muted">Thực đơn</a> >
-            <span class="text-dark">Combo</span>
+            <span class="text-dark">Gọi món</span>
         </nav>
-
     </div>
 
+    <!-- Danh sách món ăn -->
     <!-- Main Content -->
+     
     <div class="container d-flex">
         <!-- Sidebar cho PC -->
         <aside class="menu-sidebar border-end">
@@ -112,7 +109,7 @@
                 </h5>
                 <hr class="text-warning mt-0 mb-2" style="width: 50px; height: 2px; opacity: 1;">
 
-                <div class="collapse " id="orderMenu">
+                <div class="collapse show" id="orderMenu">
                     <ul class="list-unstyled">
                         <li><a href="./drink.html" class="text-decoration-none fw-bold nav-item-text-title">Drink</a></li>
                         <li><a href="./rice_curry.html" class="text-decoration-none fw-bold nav-item-text-title">Rice Curry</a>
@@ -121,7 +118,7 @@
                         <li><a href="./salad.html" class="text-decoration-none fw-bold nav-item-text-title">Salad</a></li>
                         <li><a href="./udon_cold.html" class="text-decoration-none fw-bold nav-item-text-title">Udon Cold</a></li>
                          <li><a href="./udon_curry.html" class="text-decoration-none fw-bold nav-item-text-title">Udon Curry</a></li>
-                         <li><a href="./udon_hot.html" class="text-decoration-none fw-bold nav-item-text-title">Udon Hot</a></li>                       
+                         <li><a href="./udon_hot.html" class="text-decoration-none fw-bold nav-item-text-title">Udon Hot</a></li>               
                     </ul>
                 </div>
                 
@@ -134,9 +131,9 @@
                 </h5>
                 <hr class="text-warning mt-0 mb-2" style="width: 50px; height: 2px; opacity: 1;">
 
-                <div class="collapse show" id="comboMenu">
+                <div class="collapse" id="comboMenu">
                     <ul class="list-unstyled">
-                        <li><a href="./bento.html" class="text-decoration-none fw-bold nav-item-text-title">Bento</a></li>
+                       <li><a href="./bento.html" class="text-decoration-none fw-bold nav-item-text-title">Bento</a></li>
                         <li><a href="./set_lunch.html" class="text-decoration-none fw-bold nav-item-text-title">Set Lunch</a>
                         </li>
 
@@ -146,7 +143,11 @@
             </div>
         </aside>
 
-        <div class="container py-4">
+        
+
+        <!-- Product Grid -->
+        <div class="product-grid py-4 w-100">
+
             <!-- Mobile top dropdown menu -->
             <div class="menu-mobile-bar">
                 <div class="dropdown me-3">
@@ -155,7 +156,8 @@
                         Thực đơn
                     </a>
                     <ul class="list-unstyled dropdown-menu " style="border: none;">
-                         <li><a href="./drink.html" class="text-decoration-none fw-bold nav-item-text-title">Drink</a></li>
+                        <ul class="list-unstyled">
+                        <li><a href="./drink.html" class="text-decoration-none fw-bold nav-item-text-title">Drink</a></li>
                         <li><a href="./rice_curry.html" class="text-decoration-none fw-bold nav-item-text-title">Rice Curry</a>
                         </li>
                         <li><a href="./rice.html" class="text-decoration-none fw-bold nav-item-text-title">Rice</a></li>
@@ -163,6 +165,7 @@
                         <li><a href="./udon_cold.html" class="text-decoration-none fw-bold nav-item-text-title">Udon Cold</a></li>
                          <li><a href="./udon_curry.html" class="text-decoration-none fw-bold nav-item-text-title">Udon Curry</a></li>
                          <li><a href="./udon_hot.html" class="text-decoration-none fw-bold nav-item-text-title">Udon Hot</a></li>                       
+                    </ul>
                     </ul>
                 </div>
 
@@ -172,7 +175,8 @@
                         Combo
                     </a>
                     <ul class="list-unstyled dropdown-menu " style="border: none;">
- <li><a href="./bento.html" class="text-decoration-none fw-bold nav-item-text-title">Bento</a></li>
+                        class="list-unstyled">
+                        <li><a href="./bento.html" class="text-decoration-none fw-bold nav-item-text-title">Bento</a></li>
                         <li><a href="./set_lunch.html" class="text-decoration-none fw-bold nav-item-text-title">Set Lunch</a>
                         </li>
 
@@ -181,33 +185,99 @@
                 </div>
             </div>
 
-            <!-- Nội dung bên phải -->
-            <div class="col-md-9 p-4">
-                   <!-- Nội dung bên phải -->
-            <div class="col-md-9 p-4">
-                <!-- Combo 1 -->
-                <div class="combo-card mb-5 row">
-                    <div class="col-md-5">
-                        <img src="../img/food/combo/bento/bento-129k.png" alt="Combo 1">
-                    </div>
-                    <div class="col-md-7">
-                        <h4>Combo bento</h4>
-                        <div class="price">129.000 đ <small>/combo</small></div>
-                        <small>(Giá chưa bao gồm VAT)</small>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4">
+                <!-- Product item -->
+                <div class="col">
+                    <div class="text-center">
+                        <img src="../img/food/menu/drink/coca-20k.jpg" class="img-fluid rounded" alt="Salad Cá hồi">
+                        <div class="fw-medium mt-2">Coca cola</div>
+                        <div class="text-muted">20.000 ₫</div>
                     </div>
                 </div>
-                <div class="combo-card mb-5 row">
-                    <div class="col-md-5">
-                        <img src="../img/food/combo/bento/bento-139k.jpg" alt="Combo 1">
-                    </div>
-                    <div class="col-md-7">
-                        <h4>Combo bento</h4>
-                        <div class="price">139.000 đ <small>/combo</small></div>
-                        <small>(Giá chưa bao gồm VAT)</small>
+
+                <div class="col">
+                    <div class="text-center">
+                        <img src="../img/food/menu/drink/lipton chanh-30k.png" class="img-fluid rounded" alt="Salad mùa xuân">
+                        <div class="fw-medium mt-2">Lipton chanh</div>
+                        <div class="text-muted">30.000 ₫</div>
                     </div>
                 </div>
-                
+                <div class="col">
+                    <div class="text-center">
+                        <img src="../img/food/menu/drink/pepsi-20k.jpg" class="img-fluid rounded" alt="Salad mùa xuân">
+                        <div class="fw-medium mt-2">Pepsi</div>
+                        <div class="text-muted">20.000 ₫</div>
+                    </div>
+                </div>
+
+                <!-- Thêm món khác -->
+                <div class="col">
+                    <div class="text-center">
+                        <img src="../img/food/menu/drink/sapporo35k.jpg" class="img-fluid rounded" alt="Set kimbap">
+                        <div class="fw-medium mt-2">Sapporo</div>
+                        <div class="text-muted">35.000 ₫</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="text-center">
+                        <img src="../img/food/menu/drink/soda blue ocean-30k.png" class="img-fluid rounded" alt="Tobokki">
+                        <div class="fw-medium mt-2">Soda blue ocean</div>
+                        <div class="text-muted">30.000 ₫</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="text-center">
+                        <img src="../img/food/menu/drink/soda chanh-30k.png" class="img-fluid rounded" alt="Bánh hải sản">
+                        <div class="fw-medium mt-2">Soda chanh</div>
+                        <div class="text-muted">30.000 ₫</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <img src="../img/food/menu/drink/soda dâu-30k.png" class="img-fluid rounded" alt="Bánh hải sản">
+                        <div class="fw-medium mt-2">Soda dâu</div>
+                        <div class="text-muted">30.000 ₫</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <img src="../img/food/menu/drink/soda rượu mơ-40k.png" class="img-fluid rounded" alt="Bánh hải sản">
+                        <div class="fw-medium mt-2">Soda rượu mơ</div>
+                        <div class="text-muted">40.000 ₫</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-center">
+                        <img src="../img/food/menu/drink/soda việt quất-30k.png" class="img-fluid rounded" alt="Bánh hải sản">
+                        <div class="fw-medium mt-2">Soda việt quất</div>
+                        <div class="text-muted">30.000 ₫</div>
+                    </div>
+                </div>
+                 <div class="col">
+                    <div class="text-center">
+                        <img src="../img/food/menu/drink/soda đào-30k.png" class="img-fluid rounded" alt="Bánh hải sản">
+                        <div class="fw-medium mt-2">Soda đào</div>
+                        <div class="text-muted">30.000 ₫</div>
+                    </div>
+                </div>
+                 <div class="col">
+                    <div class="text-center">
+                        <img src="../img/food/menu/drink/sâm lạnh-20k.png" class="img-fluid rounded" alt="Bánh hải sản">
+                        <div class="fw-medium mt-2">Sâm lạnh</div>
+                        <div class="text-muted">20.000 ₫</div>
+                    </div>
+                </div>
+                 <div class="col">
+                    <div class="text-center">
+                        <img src="../img/food/menu/drink/tiger-35k.jpg" class="img-fluid rounded" alt="Bánh hải sản">
+                        <div class="fw-medium mt-2">Tigger</div>
+                        <div class="text-muted">35.000 ₫</div>
+                    </div>
+                </div>
             </div>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -215,8 +285,7 @@
         <div class="col-md-1"></div>
         <div class="col-md-4 mt-3 ps-2">
             <h6>CÔNG TY CỔ PHẦN TẬP ĐOÀN PQ</h6>
-            <p class="text-footer1">Trụ sở chính: Số 22, Đường Phạm Hùng,Quận 8, Thành phố Hồ Chí Minh, Việt NamVPGG:
-                Tầng 3, Trường STU, Số 10 Trường Đại Học, T.Phuc, A.Quốc, TP Hồ Chí Minh, Việt Nam.
+            <p class="text-footer1">Trụ sở chính: Số 22, Đường Phạm Hùng,Quận 8, Thành phố Hồ Chí Minh, Việt NamVPGG: Tầng 3, Trường STU, Số 10 Trường Đại Học, T.Phuc, A.Quốc, TP Hồ Chí Minh, Việt Nam.
                 Chịu trách nhiệm nội dung: (Ông) Nguyễn Võ Anh Quốc
                 GPĐK: 0000000 cấp ngày 01/01/2004
                 ĐT: 012 234 56789 Email: support.pqht@ggg.com.vn</p>
@@ -224,18 +293,15 @@
         <div class="col-md-3 text-footer2 mt-3 ps-2">
             <h6>Hỗ Trợ Khách Hàng</h6>
             <ul>
-                <li><a href="../footer-site/terms-of-use.html">Điều Khoản sử dụng</a></li>
-                <li><a href="../footer-site/member-policy.html">Chính sách thành viên</a></li>
-                <li><a href="../footer-site/privacy-policy.html">Chính sách bảo mật</a></li>
+                <li><a href="./footer-site/terms-of-use.html">Điều Khoản sử dụng</a></li>
+                <li><a href="./footer-site/member-policy.html">Chính sách thành viên</a></li>
+                <li><a href="./footer-site/privacy-policy.html">Chính sách bảo mật</a></li>
             </ul>
         </div>
         <div class="col-md-3 mt-3 ps-2">
             <h6>© 2011 Golden Gate ., JSC. All rights reserved</h6>
         </div>
     </div>
-
-
-
 </body>
 
 </html>

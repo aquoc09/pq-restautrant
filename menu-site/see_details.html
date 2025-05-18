@@ -90,40 +90,63 @@
     <div class="container py-2">
         <nav class="breadcrumb-nav small text-muted">
             <a href="../index.html" class="text-decoration-none text-muted">Trang chủ</a> >
-            <a href="#" class="text-decoration-none text-muted">Ưu đãi</a>
+         <a href="./saleoff.html" class="text-decoration-none text-muted">Ưu đãi</a> >
+         <a href="#" class="text-decoration-none text-muted">Xem chi tiết</a> 
+
+            
 
         </nav>
     </div>
 
     <div class="container my-5">
-        <div class="row align-items-center g-4">
-            <!-- Coupon hình ảnh -->
-            <div class="col-md-6 text-center">
-                <img src="../img/sale-off/check-in free súp miso.jpg" alt="Coupon 100k" class="img-coupon img-fluid shadow">
-            </div>
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+    </ol>
+  </nav>
 
-            <!-- Thông tin coupon -->
-            <div class="col-md-6">
-                <h4>Coupon 100.000VNĐ</h4>
-                <p><strong>Thời gian áp dụng:</strong> 01/01/2025 - 31/12/2025</p>
-                <p><strong>Hết hạn sau:</strong> 231 ngày</p>
-               <a href="./see_details.html" class="btn btn-warning text-white fw-bold">Xem chi tiết</a>
-            </div>
+  <!-- Header -->
+  <div class="row">
+    <div class="col-md-6">
+      <img src="../img/sale-off/check-in free súp miso.jpg" alt="Đặt bàn online" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h4 class="fw-bold mt-3 mt-md-0">Thưởng thức Free Soup Miso trong khung giờ như ý tại PQ</h4>
+      <div class="d-flex align-items-center mt-3">
+        <span class="me-2">Kết thúc sau:</span>
+        <div class="countdown-box bg-dark text-white px-3 py-2 rounded">22:07:58</div>
+      </div>
+      <p class="mt-2 mb-1"><strong>Thời gian áp dụng:</strong> 11/03/2025 - 31/05/2025</p>
+      <p><strong>Hết hạn sau:</strong> 12 ngày</p>
 
-            <!-- Coupon hình ảnh -->
-            <div class="col-md-6 text-center">
-                <img src="../img/sale-off/chiến thần cà ri.jpg" alt="Coupon 100k" class="img-coupon img-fluid shadow">
-            </div>
+    </div>
+  </div>
 
-            <!-- Thông tin coupon -->
-            <div class="col-md-6">
-                <h4>Coupon 100.000VNĐ</h4>
-                <p><strong>Thời gian áp dụng:</strong> 01/01/2025 - 31/12/2025</p>
-                <p><strong>Hết hạn sau:</strong> 231 ngày</p>
-               <a href="./see_details_1.html" class="btn btn-warning text-white fw-bold">Xem chi tiết</a>
+  <!-- Nội dung chương trình -->
+<div class="mt-5">
+  <h5 class="fw-bold">Nội dung chương trình</h5>
+ 
 
-            </div>
-        </div>
+  <p><strong>1. Buffet Trọn trịa & Buffet Quốc dân:</strong><br>
+    Khung giờ trưa từ 14h-17h ngày Thứ 7 và Chủ nhật tại:</p>
+  <ul>
+    <li>PQ Lotte Võ Chí Công</li>
+    <li>PQ Aeon Mall Hà Đông</li>
+    <li>PQ Aeon Mall Long Biên</li>
+  </ul>
+  <p>Khung giờ trưa ngày Thứ 7 và Chủ nhật tại: <strong>Toàn chuỗi PQ House Hà Nội</strong> (trừ 3 nhà hàng trên).</p>
+
+  <p><strong>2. Buffet Không giới hạn:</strong><br>
+    Khung giờ trưa ngày Thứ 7 và Chủ nhật tại:</p>
+  <ul>
+    <li>PQ Lotte Võ Chí Công</li>
+    <li>PQ Aeon Mall Hà Đông</li>
+    <li>PQ Aeon Mall Long Biên</li>
+  </ul>
+</div>
+
+</div>
         
 
 
@@ -207,6 +230,45 @@
         // Nhân đôi review để hiệu ứng cuộn mượt hơn
         var reviews = $(".review-track").html();
         $(".review-track").append(reviews);
+    });
+
+
+
+    
+     $(document).ready(function () {
+        // Nhân đôi review để cuộn mượt
+        var reviews = $(".review-track").html();
+        $(".review-track").append(reviews);
+
+        // Countdown
+        function startCountdown(selector) {
+            let timeStr = $(selector).text().trim();
+            let timeParts = timeStr.split(':');
+            let totalSeconds = (+timeParts[0]) * 3600 + (+timeParts[1]) * 60 + (+timeParts[2]);
+
+            let countdown = setInterval(function () {
+                if (totalSeconds <= 0) {
+                    clearInterval(countdown);
+                    $(selector).text("Đã hết hạn");
+                    return;
+                }
+
+                totalSeconds--;
+
+                let hours = Math.floor(totalSeconds / 3600);
+                let minutes = Math.floor((totalSeconds % 3600) / 60);
+                let seconds = totalSeconds % 60;
+
+                let formatted = 
+                    String(hours).padStart(2, '0') + ':' +
+                    String(minutes).padStart(2, '0') + ':' +
+                    String(seconds).padStart(2, '0');
+
+                $(selector).text(formatted);
+            }, 1000);
+        }
+
+        startCountdown('.countdown-box');
     });
 </script>
 </body>

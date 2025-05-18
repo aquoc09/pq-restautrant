@@ -225,3 +225,37 @@ html, body{
   border-radius: 50%;
   border: 2px solid #ccc;
 }
+
+
+
+/*Đánh giá của người dùng */
+
+.review-slider {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.review-track {
+    display: flex;
+    animation: scrollReviews 20s linear infinite;
+}
+.review-item {
+    min-width: 500px;
+    flex-shrink: 0;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+@keyframes scrollReviews {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+
+
+
+
+
