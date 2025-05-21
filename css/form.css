@@ -1,6 +1,6 @@
 .booking-container {
   max-width: 600px;
-  height: 600px;
+  height: auto;
   margin: 0 auto;
   background-color: #fff;
   padding: 30px;

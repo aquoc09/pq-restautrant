@@ -16,7 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <title>Đặt bàn</title>
+    <title>Đăng kí</title>
 </head>
 
 <body>
@@ -91,48 +91,45 @@
         </nav>
     </div>
 
-    <!-- Login form -->
+    <!-- Register form -->
     <div class="booking-container">
         <h2>Đăng kí</h2>
-        <form id="loginForm">
+        <form id="registerForm">
             <div class="form-group">
                 <label for="username">Tên đăng nhập:</label>
                 <input type="text" id="username" name="username" required />
+                <span class="error-message" id="usernameErrorMessage"></span>
             </div>
 
             <div class="form-group">
                 <label for="password">Mật khẩu:</label>
                 <input type="password" id="password" name="password" required />
+                <span class="error-message" id="passwordErrorMessage"></span>
             </div>
 
             <div class="form-group">
                 <label for="password">Xác nhận mật khẩu:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required />
+                <input type="password" id="confirmPassword" name="confirm-password" required />
+                <span class="error-message" id="confirmPasswordErrorMessage"></span>
             </div>
 
             <div class="form-group">
                 <label for="password">Họ và tên:</label>
-                <input type="text" id="fullname" name="fullname" required />
+                <input type="text" id="fullName" name="fullName" required />
+                <span class="error-message" id="fullNameErrorMessage"></span>
             </div>
 
             <div class="form-group">
                 <label for="phone">Số điện thoại:</label>
                 <input type="tel" id="phone" name="phone" required />
+                <span class="error-message" id="phoneErrorMessage"></span>
             </div>
 
             <div class="d-flex justify-content-center">
-                <button type="submit" class="btn-register justify-content-center">Đăng kí</button>
+                <button type="submit" class="btn-register justify-content-center" onclick="verifyRegister()">Đăng kí</button>
             </div>
         </form>
     </div>
-
-    <script>
-        document.getElementById("bookingForm").addEventListener("submit", function (e) {
-            e.preventDefault();
-            alert("Đăng kí thành công");
-            this.reset();
-        });
-    </script>
 
     <!-- Footer -->
     <div class="footer row mt-5 ms-0">
@@ -157,8 +154,37 @@
             <h6>© 2011 Golden Gate ., JSC. All rights reserved</h6>
         </div>
     </div>
+    <!-- Button trigger modal -->
+    <button type="button" id="btnModal" style="display: none" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#modal">
+        Launch demo modal
+    </button>
 
-<script src="../js/index-user.js"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalLabel">THÔNG BÁO</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body w-100 d-flex justify-content-center align-items-center flex-column">
+                    <h5 id="title-text-modal"></h5>
+                </div>
+                <div class="modal-footer w-100 d-flex justify-content-center">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+                        Xong
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Javascript -->
+    <script src="../js/login.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/index-user.js"></script>
     <script>loadUserHeader(2)</script>
 </body>
 
