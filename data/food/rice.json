@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1747831599635,
+        "name": "Butadon",
+        "img": "./img/food/menu/rice/butadon-125k.png",
+        "price": 125000
+    },
+    {
+        "id": 1747831620863,
+        "name": "Gyudon",
+        "img": "./img/food/menu/rice/gyudon-125k.png",
+        "price": 125000
+    },
+    {
+        "id": 1747831637991,
+        "name": "Katsudon",
+        "img": "./img/food/menu/rice/katsudon-135k.png",
+        "price": 135000
+    },
+    {
+        "id": 1747831655788,
+        "name": "Onirigi",
+        "img": "./img/food/menu/rice/onigiri-60k.png",
+        "price": 60000
+    },
+    {
+        "id": 1747831673211,
+        "name": "Oyakodon",
+        "img": "./img/food/menu/rice/oyakodon-125k.png",
+        "price": 125000
+    },
+    {
+        "id": 1747831689590,
+        "name": "Shishirian raisu",
+        "img": "./img/food/menu/rice/shishirian-raisu-125k.png",
+        "price": 125000
+    },
+    {
+        "id": 1747831702824,
+        "name": "Tamagodon",
+        "img": "./img/food/menu/rice/tamagodon-115k.png",
+        "price": 115000
+    }
+]

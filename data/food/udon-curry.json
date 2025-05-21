@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1747834020664,
+        "name": "Mì curry",
+        "img": "./img/food/menu/udon-curry/mì curry-99k.png",
+        "price": 99000
+    },
+    {
+        "id": 1747834043555,
+        "name": "Mì curry bò",
+        "img": "./img/food/menu/udon-curry/mì curry-bò-149k.png",
+        "price": 149000
+    },
+    {
+        "id": 1747834062867,
+        "name": "Mì curry gà chiên xù",
+        "img": "./img/food/menu/udon-curry/mì curry-gà chiên xù-149k.png",
+        "price": 149000
+    },
+    {
+        "id": 1747834081498,
+        "name": "Mì curry heo chiên xù",
+        "img": "./img/food/menu/udon-curry/mì curry-heo chiên xù-149k.png",
+        "price": 149000
+    },
+    {
+        "id": 1747834102855,
+        "name": "Mì curry tôm chiên xù",
+        "img": "./img/food/menu/udon-curry/mì curry-tôm chiên xù-149k.png",
+        "price": 149000
+    },
+    {
+        "id": 1747834117556,
+        "name": "Mì curry trứng lòng đào",
+        "img": "./img/food/menu/udon-curry/mì curry-trứng lòng đào-109k.png",
+        "price": 109000
+    },
+    {
+        "id": 1747834157662,
+        "name": "Mì curry xúc xích",
+        "img": "./img/food/menu/udon-curry/mì curry-xúc xích-139k.png",
+        "price": 139000
+    }
+]

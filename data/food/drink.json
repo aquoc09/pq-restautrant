@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1747833418742,
+        "name": "Coca",
+        "img": "./img/food/menu/drink/coca-20k.jpg",
+        "price": 20000
+    },
+    {
+        "id": 1747833445843,
+        "name": "Lipton chanh",
+        "img": "./img/food/menu/drink/lipton chanh-30k.png",
+        "price": 30000
+    },
+    {
+        "id": 1747833471261,
+        "name": "Pepsi",
+        "img": "./img/food/menu/drink/pepsi-20k.jpg",
+        "price": 20000
+    },
+    {
+        "id": 1747833493953,
+        "name": "Sapporo",
+        "img": "./img/food/menu/drink/sapporo35k.jpg",
+        "price": 35000
+    },
+    {
+        "id": 1747833511079,
+        "name": "Sâm lạnh",
+        "img": "./img/food/menu/drink/sâm lạnh-20k.png",
+        "price": 20000
+    },
+    {
+        "id": 1747833529796,
+        "name": "Soda blue ocean",
+        "img": "./img/food/menu/drink/soda blue ocean-30k.png",
+        "price": 30000
+    },
+    {
+        "id": 1747833542673,
+        "name": "Soda chanh",
+        "img": "./img/food/menu/drink/soda chanh-30k.png",
+        "price": 30000
+    },
+    {
+        "id": 1747833553875,
+        "name": "Soda dâu",
+        "img": "./img/food/menu/drink/soda dâu-30k.png",
+        "price": 30000
+    },
+    {
+        "id": 1747833565740,
+        "name": "Soda đào",
+        "img": "./img/food/menu/drink/soda đào-30k.png",
+        "price": 30000
+    },
+    {
+        "id": 1747833590007,
+        "name": "Soda rượu mơ",
+        "img": "./img/food/menu/drink/soda rượu mơ-40k.png",
+        "price": 40000
+    },
+    {
+        "id": 1747833612115,
+        "name": "Soda việt quất",
+        "img": "./img/food/menu/drink/soda việt quất-30k.png",
+        "price": 30000
+    },
+    {
+        "id": 1747833632015,
+        "name": "Tiger",
+        "img": "./img/food/menu/drink/tiger-35k.jpg",
+        "price": 35000
+    },
+    {
+        "id": 1747833644094,
+        "name": "Trà đá",
+        "img": "./img/food/menu/drink/trà đá-8k.png",
+        "price": 8000
+    },
+    {
+        "id": 1747833657487,
+        "name": "Trà đào",
+        "img": "./img/food/menu/drink/trà đào-35k.jpg",
+        "price": 35000
+    },
+    {
+        "id": 1747833671305,
+        "name": "Trà hoa cúc",
+        "img": "./img/food/menu/drink/trà hoa cúc-25k.jpg",
+        "price": 25000
+    }
+]

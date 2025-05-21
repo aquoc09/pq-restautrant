@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1747828706004,
+        "name": "Salad cá hồi",
+        "img": "./img/food/menu/salad/salad-cá hồi-129k.jpg",
+        "price": 129000
+    },
+    {
+        "id": 1747828727933,
+        "name": "Salad đậu hủ trứng",
+        "img": "./img/food/menu/salad/salad-đậu hủ trứng-125k.jpg",
+        "price": 125000
+    },
+    {
+        "id": 1747828747183,
+        "name": "Salad rau",
+        "img": "./img/food/menu/salad/salad-rau-90k.jpg",
+        "price": 90000
+    },
+    {
+        "id": 1747828764787,
+        "name": "Salad rong trứng",
+        "img": "./img/food/menu/salad/salad-rong trứng - 109k.jpg",
+        "price": 109000
+    },
+    {
+        "id": 1747828780591,
+        "name": "Salad tôm",
+        "img": "./img/food/menu/salad/salad-tôm-129k.jpg",
+        "price": 129000
+    },
+    {
+        "id": 1747828797378,
+        "name": "Salad thịt trứng",
+        "img": "./img/food/menu/salad/salad-thịt trứng-140k.jpg",
+        "price": 140
+    },
+    {
+        "id": 1747828813376,
+        "name": "Salad thịt xông khói",
+        "img": "./img/food/menu/salad/salad-thịt xông khói-135k.jpg",
+        "price": 135000
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1747833715552,
+        "name": "Cơm cà ri bò",
+        "img": "./img/food/menu/rice-curry/cơm cari-bò-139k.jpg",
+        "price": 139000
+    },
+    {
+        "id": 1747833743442,
+        "name": "Cơm cà ri gà chiên xù",
+        "img": "./img/food/menu/rice-curry/cơm cari-gà chiên xù-139k.jpg",
+        "price": 139000
+    },
+    {
+        "id": 1747833757721,
+        "name": "Cơm cà ri heo chiên xù",
+        "img": "./img/food/menu/rice-curry/cơm cari-heo chiên xù-139k.jpg",
+        "price": 139000
+    },
+    {
+        "id": 1747833773722,
+        "name": "Cơm cà ri tôm chiên xù",
+        "img": "./img/food/menu/rice-curry/cơm cari-tôm chiên xù-139k.jpg",
+        "price": 139000
+    }
+]

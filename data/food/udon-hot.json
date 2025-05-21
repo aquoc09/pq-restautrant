@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1747834212851,
+        "name": "Ebiten",
+        "img": "./img/food/menu/udon-hot/ebiten-115k.png",
+        "price": 115000
+    },
+    {
+        "id": 1747834231350,
+        "name": "Gobou",
+        "img": "./img/food/menu/udon-hot/gobou-115k.png",
+        "price": 115000
+    },
+    {
+        "id": 1747834252584,
+        "name": "Kake",
+        "img": "./img/food/menu/udon-hot/kake-85k.png",
+        "price": 85000
+    },
+    {
+        "id": 1747834297703,
+        "name": "Kamatama",
+        "img": "./img/food/menu/udon-hot/kamatama-95k.png",
+        "price": 95000
+    },
+    {
+        "id": 1747834316164,
+        "name": "Kitsune",
+        "img": "./img/food/menu/udon-hot/kitsune-95k.png",
+        "price": 95000
+    },
+    {
+        "id": 1747834333884,
+        "name": "Niku",
+        "img": "./img/food/menu/udon-hot/niku-115k.png",
+        "price": 115000
+    },
+    {
+        "id": 1747834350616,
+        "name": "Shifudo udon",
+        "img": "./img/food/menu/udon-hot/shifudo-125k.png",
+        "price": 125000
+    },
+    {
+        "id": 1747834365116,
+        "name": "Shifudo kimchi udon",
+        "img": "./img/food/menu/udon-hot/shifudo-kimchi-130k.png",
+        "price": 130000
+    },
+    {
+        "id": 1747834384503,
+        "name": "Sukiyaki kimchi udon",
+        "img": "./img/food/menu/udon-hot/sukiyaki kimchi-129k.png",
+        "price": 129000
+    },
+    {
+        "id": 1747834402288,
+        "name": "Sukiyaki udon",
+        "img": "./img/food/menu/udon-hot/sukiyaki-125k.png",
+        "price": 125000
+    },
+    {
+        "id": 1747834439819,
+        "name": "Tsukimi udon",
+        "img": "./img/food/menu/udon-hot/tsukimi-95k.png",
+        "price": 95000
+    },
+    {
+        "id": 1747834450648,
+        "name": "Unagi udon",
+        "img": "./img/food/menu/udon-hot/unagi_125k.png",
+        "price": 125000
+    },
+    {
+        "id": 1747834465224,
+        "name": "Wakame udon",
+        "img": "./img/food/menu/udon-hot/wakame-95k.png",
+        "price": 95000
+    },
+    {
+        "id": 1747834478984,
+        "name": "Yaki kimchi udon",
+        "img": "./img/food/menu/udon-hot/yaki-kimchi-udon-130k.png",
+        "price": 130000
+    },
+    {
+        "id": 1747834488779,
+        "name": "Yaki udon",
+        "img": "./img/food/menu/udon-hot/yaki-udon-125k.png",
+        "price": 125000
+    }
+]

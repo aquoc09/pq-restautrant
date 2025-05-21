@@ -1,0 +1,363 @@
+[
+    {
+        "id": 1747833418742,
+        "name": "Coca",
+        "img": "./img/food/menu/drink/coca-20k.jpg",
+        "price": 20000
+    },
+    {
+        "id": 1747833445843,
+        "name": "Lipton chanh",
+        "img": "./img/food/menu/drink/lipton chanh-30k.png",
+        "price": 30000
+    },
+    {
+        "id": 1747833471261,
+        "name": "Pepsi",
+        "img": "./img/food/menu/drink/pepsi-20k.jpg",
+        "price": 20000
+    },
+    {
+        "id": 1747833493953,
+        "name": "Sapporo",
+        "img": "./img/food/menu/drink/sapporo35k.jpg",
+        "price": 35000
+    },
+    {
+        "id": 1747833511079,
+        "name": "Sâm lạnh",
+        "img": "./img/food/menu/drink/sâm lạnh-20k.png",
+        "price": 20000
+    },
+    {
+        "id": 1747833529796,
+        "name": "Soda blue ocean",
+        "img": "./img/food/menu/drink/soda blue ocean-30k.png",
+        "price": 30000
+    },
+    {
+        "id": 1747833542673,
+        "name": "Soda chanh",
+        "img": "./img/food/menu/drink/soda chanh-30k.png",
+        "price": 30000
+    },
+    {
+        "id": 1747833553875,
+        "name": "Soda dâu",
+        "img": "./img/food/menu/drink/soda dâu-30k.png",
+        "price": 30000
+    },
+    {
+        "id": 1747833565740,
+        "name": "Soda đào",
+        "img": "./img/food/menu/drink/soda đào-30k.png",
+        "price": 30000
+    },
+    {
+        "id": 1747833590007,
+        "name": "Soda rượu mơ",
+        "img": "./img/food/menu/drink/soda rượu mơ-40k.png",
+        "price": 40000
+    },
+    {
+        "id": 1747833612115,
+        "name": "Soda việt quất",
+        "img": "./img/food/menu/drink/soda việt quất-30k.png",
+        "price": 30000
+    },
+    {
+        "id": 1747833632015,
+        "name": "Tiger",
+        "img": "./img/food/menu/drink/tiger-35k.jpg",
+        "price": 35000
+    },
+    {
+        "id": 1747833644094,
+        "name": "Trà đá",
+        "img": "./img/food/menu/drink/trà đá-8k.png",
+        "price": 8000
+    },
+    {
+        "id": 1747833657487,
+        "name": "Trà đào",
+        "img": "./img/food/menu/drink/trà đào-35k.jpg",
+        "price": 35000
+    },
+    {
+        "id": 1747833671305,
+        "name": "Trà hoa cúc",
+        "img": "./img/food/menu/drink/trà hoa cúc-25k.jpg",
+        "price": 25000
+    },
+    {
+        "id": 1747833715552,
+        "name": "Cơm cà ri bò",
+        "img": "./img/food/menu/rice-curry/cơm cari-bò-139k.jpg",
+        "price": 139000
+    },
+    {
+        "id": 1747833743442,
+        "name": "Cơm cà ri gà chiên xù",
+        "img": "./img/food/menu/rice-curry/cơm cari-gà chiên xù-139k.jpg",
+        "price": 139000
+    },
+    {
+        "id": 1747833757721,
+        "name": "Cơm cà ri heo chiên xù",
+        "img": "./img/food/menu/rice-curry/cơm cari-heo chiên xù-139k.jpg",
+        "price": 139000
+    },
+    {
+        "id": 1747833773722,
+        "name": "Cơm cà ri tôm chiên xù",
+        "img": "./img/food/menu/rice-curry/cơm cari-tôm chiên xù-139k.jpg",
+        "price": 139000
+    },{
+        "id": 1747831599635,
+        "name": "Butadon",
+        "img": "./img/food/menu/rice/butadon-125k.png",
+        "price": 125000
+    },
+    {
+        "id": 1747831620863,
+        "name": "Gyudon",
+        "img": "./img/food/menu/rice/gyudon-125k.png",
+        "price": 125000
+    },
+    {
+        "id": 1747831637991,
+        "name": "Katsudon",
+        "img": "./img/food/menu/rice/katsudon-135k.png",
+        "price": 135000
+    },
+    {
+        "id": 1747831655788,
+        "name": "Onirigi",
+        "img": "./img/food/menu/rice/onigiri-60k.png",
+        "price": 60000
+    },
+    {
+        "id": 1747831673211,
+        "name": "Oyakodon",
+        "img": "./img/food/menu/rice/oyakodon-125k.png",
+        "price": 125000
+    },
+    {
+        "id": 1747831689590,
+        "name": "Shishirian raisu",
+        "img": "./img/food/menu/rice/shishirian-raisu-125k.png",
+        "price": 125000
+    },
+    {
+        "id": 1747831702824,
+        "name": "Tamagodon",
+        "img": "./img/food/menu/rice/tamagodon-115k.png",
+        "price": 115000
+    },{
+        "id": 1747828706004,
+        "name": "Salad cá hồi",
+        "img": "./img/food/menu/salad/salad-cá hồi-129k.jpg",
+        "price": 129000
+    },
+    {
+        "id": 1747828727933,
+        "name": "Salad đậu hủ trứng",
+        "img": "./img/food/menu/salad/salad-đậu hủ trứng-125k.jpg",
+        "price": 125000
+    },
+    {
+        "id": 1747828747183,
+        "name": "Salad rau",
+        "img": "./img/food/menu/salad/salad-rau-90k.jpg",
+        "price": 90000
+    },
+    {
+        "id": 1747828764787,
+        "name": "Salad rong trứng",
+        "img": "./img/food/menu/salad/salad-rong trứng - 109k.jpg",
+        "price": 109000
+    },
+    {
+        "id": 1747828780591,
+        "name": "Salad tôm",
+        "img": "./img/food/menu/salad/salad-tôm-129k.jpg",
+        "price": 129000
+    },
+    {
+        "id": 1747828797378,
+        "name": "Salad thịt trứng",
+        "img": "./img/food/menu/salad/salad-thịt trứng-140k.jpg",
+        "price": 140
+    },
+    {
+        "id": 1747828813376,
+        "name": "Salad thịt xông khói",
+        "img": "./img/food/menu/salad/salad-thịt xông khói-135k.jpg",
+        "price": 135000
+    },{
+        "id": 1747833823456,
+        "name": "Bukkake udon",
+        "img": "./img/food/menu/udon-cold/bukkake-udon-80k.png",
+        "price": 80000
+    },
+    {
+        "id": 1747833853745,
+        "name": "Combo dirikara tsukumen",
+        "img": "./img/food/menu/udon-cold/combo-dirikara-tsukumen-145k.png",
+        "price": 145000
+    },
+    {
+        "id": 1747833880454,
+        "name": "Dirikara tsukumen",
+        "img": "./img/food/menu/udon-cold/dirikara-tsukumen-130k.png",
+        "price": 130000
+    },
+    {
+        "id": 1747833904236,
+        "name": "Gobou bukkake udon",
+        "img": "./img/food/menu/udon-cold/gobou-bukkake-udon-120k.png",
+        "price": 120000
+    },
+    {
+        "id": 1747833916048,
+        "name": "Niku bukkake udon",
+        "img": "./img/food/menu/udon-cold/niku-bukkake-udon-135k.png",
+        "price": 135000
+    },
+    {
+        "id": 1747833929919,
+        "name": "Zaru udon",
+        "img": "./img/food/menu/udon-cold/zaru-udon-80k.png",
+        "price": 80000
+    },{
+        "id": 1747834020664,
+        "name": "Mì curry",
+        "img": "./img/food/menu/udon-curry/mì curry-99k.png",
+        "price": 99000
+    },
+    {
+        "id": 1747834043555,
+        "name": "Mì curry bò",
+        "img": "./img/food/menu/udon-curry/mì curry-bò-149k.png",
+        "price": 149000
+    },
+    {
+        "id": 1747834062867,
+        "name": "Mì curry gà chiên xù",
+        "img": "./img/food/menu/udon-curry/mì curry-gà chiên xù-149k.png",
+        "price": 149000
+    },
+    {
+        "id": 1747834081498,
+        "name": "Mì curry heo chiên xù",
+        "img": "./img/food/menu/udon-curry/mì curry-heo chiên xù-149k.png",
+        "price": 149000
+    },
+    {
+        "id": 1747834102855,
+        "name": "Mì curry tôm chiên xù",
+        "img": "./img/food/menu/udon-curry/mì curry-tôm chiên xù-149k.png",
+        "price": 149000
+    },
+    {
+        "id": 1747834117556,
+        "name": "Mì curry trứng lòng đào",
+        "img": "./img/food/menu/udon-curry/mì curry-trứng lòng đào-109k.png",
+        "price": 109000
+    },
+    {
+        "id": 1747834157662,
+        "name": "Mì curry xúc xích",
+        "img": "./img/food/menu/udon-curry/mì curry-xúc xích-139k.png",
+        "price": 139000
+    },{
+        "id": 1747834212851,
+        "name": "Ebiten",
+        "img": "./img/food/menu/udon-hot/ebiten-115k.png",
+        "price": 115000
+    },
+    {
+        "id": 1747834231350,
+        "name": "Gobou",
+        "img": "./img/food/menu/udon-hot/gobou-115k.png",
+        "price": 115000
+    },
+    {
+        "id": 1747834252584,
+        "name": "Kake",
+        "img": "./img/food/menu/udon-hot/kake-85k.png",
+        "price": 85000
+    },
+    {
+        "id": 1747834297703,
+        "name": "Kamatama",
+        "img": "./img/food/menu/udon-hot/kamatama-95k.png",
+        "price": 95000
+    },
+    {
+        "id": 1747834316164,
+        "name": "Kitsune",
+        "img": "./img/food/menu/udon-hot/kitsune-95k.png",
+        "price": 95000
+    },
+    {
+        "id": 1747834333884,
+        "name": "Niku",
+        "img": "./img/food/menu/udon-hot/niku-115k.png",
+        "price": 115000
+    },
+    {
+        "id": 1747834350616,
+        "name": "Shifudo udon",
+        "img": "./img/food/menu/udon-hot/shifudo-125k.png",
+        "price": 125000
+    },
+    {
+        "id": 1747834365116,
+        "name": "Shifudo kimchi udon",
+        "img": "./img/food/menu/udon-hot/shifudo-kimchi-130k.png",
+        "price": 130000
+    },
+    {
+        "id": 1747834384503,
+        "name": "Sukiyaki kimchi udon",
+        "img": "./img/food/menu/udon-hot/sukiyaki kimchi-129k.png",
+        "price": 129000
+    },
+    {
+        "id": 1747834402288,
+        "name": "Sukiyaki udon",
+        "img": "./img/food/menu/udon-hot/sukiyaki-125k.png",
+        "price": 125000
+    },
+    {
+        "id": 1747834439819,
+        "name": "Tsukimi udon",
+        "img": "./img/food/menu/udon-hot/tsukimi-95k.png",
+        "price": 95000
+    },
+    {
+        "id": 1747834450648,
+        "name": "Unagi udon",
+        "img": "./img/food/menu/udon-hot/unagi_125k.png",
+        "price": 125000
+    },
+    {
+        "id": 1747834465224,
+        "name": "Wakame udon",
+        "img": "./img/food/menu/udon-hot/wakame-95k.png",
+        "price": 95000
+    },
+    {
+        "id": 1747834478984,
+        "name": "Yaki kimchi udon",
+        "img": "./img/food/menu/udon-hot/yaki-kimchi-udon-130k.png",
+        "price": 130000
+    },
+    {
+        "id": 1747834488779,
+        "name": "Yaki udon",
+        "img": "./img/food/menu/udon-hot/yaki-udon-125k.png",
+        "price": 125000
+    }
+]

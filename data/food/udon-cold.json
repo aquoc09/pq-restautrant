@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1747833823456,
+        "name": "Bukkake udon",
+        "img": "./img/food/menu/udon-cold/bukkake-udon-80k.png",
+        "price": 80000
+    },
+    {
+        "id": 1747833853745,
+        "name": "Combo dirikara tsukumen",
+        "img": "./img/food/menu/udon-cold/combo-dirikara-tsukumen-145k.png",
+        "price": 145000
+    },
+    {
+        "id": 1747833880454,
+        "name": "Dirikara tsukumen",
+        "img": "./img/food/menu/udon-cold/dirikara-tsukumen-130k.png",
+        "price": 130000
+    },
+    {
+        "id": 1747833904236,
+        "name": "Gobou bukkake udon",
+        "img": "./img/food/menu/udon-cold/gobou-bukkake-udon-120k.png",
+        "price": 120000
+    },
+    {
+        "id": 1747833916048,
+        "name": "Niku bukkake udon",
+        "img": "./img/food/menu/udon-cold/niku-bukkake-udon-135k.png",
+        "price": 135000
+    },
+    {
+        "id": 1747833929919,
+        "name": "Zaru udon",
+        "img": "./img/food/menu/udon-cold/zaru-udon-80k.png",
+        "price": 80000
+    }
+]

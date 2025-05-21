@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Nước giải khát",
+    "description": "Các loại nước uống mát lạnh và giải khát.",
+    "img": ""
+  },
+  {
+    "id": 2,
+    "name": "Cơm",
+    "description": "Món cơm truyền thống phục vụ với nhiều món ăn kèm.",
+    "img": ""
+  },
+  {
+    "id": 3,
+    "name": "Cơm cà ri",
+    "description": "Cơm kết hợp với sốt cà ri Nhật Bản thơm ngon.",
+    "img": ""
+  },
+  {
+    "id": 4,
+    "name": "Salad",
+    "description": "Món rau trộn tươi ngon, thanh mát, tốt cho sức khỏe.",
+    "img": ""
+  },
+  {
+    "id": 5,
+    "name": "Udon lạnh",
+    "description": "Mì Udon dùng lạnh, thích hợp trong ngày nóng.",
+    "img": ""
+  },
+  {
+    "id": 6,
+    "name": "Udon cà ri",
+    "description": "Mì Udon ăn kèm nước sốt cà ri đậm đà.",
+    "img": ""
+  },
+  {
+    "id": 7,
+    "name": "Udon nóng",
+    "description": "Mì Udon nước nóng, thơm ngon và ấm áp.",
+    "img": ""
+  },
+  {
+    "id": 8,
+    "name": "Bento",
+    "description": "Cơm hộp Nhật Bản đầy đủ dinh dưỡng.",
+    "img": ""
+  },
+  {
+    "id": 9,
+    "name": "Set lunch tiết kiệm",
+    "description": "Suất ăn trưa đầy đủ món, giá hợp lý.",
+    "img": ""
+  },
+  {
+    "id": 10,
+    "name": "Udon 99k",
+    "description": "Mì Udon đặc biệt với giá chỉ 99.000đ.",
+    "img": ""
+  }
+]
