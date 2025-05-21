@@ -16,6 +16,8 @@
 }
 .header-dashboard .logo img {
   height: 100%;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 213, 2, 1);
 }
 .header-dashboard .admin-user img {
   width: 50px;
