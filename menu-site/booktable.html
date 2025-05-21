@@ -106,43 +106,45 @@
             <div class="restaurant-scroll" style="max-height: 400px; overflow-y: auto; padding-right: 10px;">
                 <div class="restaurant-list">
                     <div class="restaurant-item">
-                        <p><strong>Gogi House Trần Thái Tông</strong></p>
-                        <p>103D5A Trần Thái Tông, Dịch Vọng, Cầu Giấy, Hà Nội</p>
-                        <p>Open - Close: 09:00 - 22:00</p>
-                        <p>
-                            <a href="tel:02473007392" class="btn btn-outline-primary">02473007392</a>
-                            <a href="./booking-form.html" class="btn btn-warning">Đặt bàn</a>
-                        </p>
-                    </div>
+    <p><strong>PQ Trần Thái Tông</strong></p>
+    <p>103D5A Trần Thái Tông, Dịch Vọng, Cầu Giấy, Hà Nội</p>
+    <p>Open - Close: 09:00 - 22:00</p>
+    <p>
+        <a href="tel:02473007392" class="btn btn-outline-primary">012345678</a>
+        <a href="./booking-form.html" class="btn btn-warning">Đặt bàn</a>
+    </p>
+</div>
 
-                    <div class="restaurant-item">
-                        <p><strong>Gogi House Trần Thái Tông</strong></p>
-                        <p>103D5A Trần Thái Tông, Dịch Vọng, Cầu Giấy, Hà Nội</p>
-                        <p>Open - Close: 09:00 - 22:00</p>
-                        <p>
-                            <a href="tel:02473007392" class="btn btn-outline-primary">02473007392</a>
-                            <a href="./booking-form.html" class="btn btn-warning">Đặt bàn</a>
-                        </p>
-                    </div>
+<div class="restaurant-item">
+    <p><strong>PQ Trần Thái Tông</strong></p>
+    <p>103D5A Trần Thái Tông, Dịch Vọng, Cầu Giấy, Hà Nội</p>
+    <p>Open - Close: 09:00 - 22:00</p>
+    <p>
+        <a href="tel:02473007392" class="btn btn-outline-primary">012345678</a>
+        <a href="./booking-form.html" class="btn btn-warning">Đặt bàn</a>
+    </p>
+</div>
 
-                    <div class="restaurant-item">
-                        <p><strong>Gogi House Trần Thái Tông</strong></p>
-                        <p>103D5A Trần Thái Tông, Dịch Vọng, Cầu Giấy, Hà Nội</p>
-                        <p>Open - Close: 09:00 - 22:00</p>
-                        <p>
-                            <a href="tel:02473007392" class="btn btn-outline-primary">02473007392</a>
-                            <a href="./booking-form.html" class="btn btn-warning">Đặt bàn</a>
-                        </p>
-                    </div>
-                    <div class="restaurant-item">
-                        <p><strong>Gogi House Trần Thái Tông</strong></p>
-                        <p>103D5A Trần Thái Tông, Dịch Vọng, Cầu Giấy, Hà Nội</p>
-                        <p>Open - Close: 09:00 - 22:00</p>
-                        <p>
-                            <a href="tel:02473007392" class="btn btn-outline-primary">02473007392</a>
-                            <a href="./booking-form.html" class="btn btn-warning">Đặt bàn</a>
-                        </p>
-                    </div>
+<div class="restaurant-item">
+    <p><strong>PQ Nguyễn Trãi</strong></p>
+    <p>456 Nguyễn Trãi, Quận 5, TP HCM</p>
+    <p>Open - Close: 09:00 - 22:00</p>
+    <p>
+        <a href="tel:02812345678" class="btn btn-outline-primary">012345678</a>
+        <a href="./booking-form.html" class="btn btn-warning">Đặt bàn</a>
+    </p>
+</div>
+
+<div class="restaurant-item">
+    <p><strong>PQ Phạm Văn Đồng</strong></p>
+    <p>789 Phạm Văn Đồng, Thủ Đức, TP HCM</p>
+    <p>Open - Close: 09:00 - 22:00</p>
+    <p>
+        <a href="tel:02887654321" class="btn btn-outline-primary">012345678</a>
+        <a href="./booking-form.html" class="btn btn-warning">Đặt bàn</a>
+    </p>
+</div>
+
                     <!-- Các nhà hàng khác giữ nguyên -->
                 </div>
             </div>
@@ -183,6 +185,41 @@
         </div>
     </div>
 
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script>
+ $(document).ready(function() {
+  $('.form-control').on('input', function() {
+    const searchTerm = removeVietnameseTones($(this).val().toLowerCase().trim());
+
+    $('.restaurant-item').each(function() {
+      const name = removeVietnameseTones($(this).find('strong').text().toLowerCase().trim());
+
+      if (name.indexOf(searchTerm) !== -1) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+  });
+
+  // Hàm bỏ dấu tiếng Việt
+  function removeVietnameseTones(str) {
+    str = str.replace(/á|à|ả|ã|ạ|ă|ắ|ằ|ẳ|ẵ|ặ|â|ấ|ầ|ẩ|ẫ|ậ/gi, 'a');
+    str = str.replace(/é|è|ẻ|ẽ|ẹ|ê|ế|ề|ể|ễ|ệ/gi, 'e');
+    str = str.replace(/i|í|ì|ỉ|ĩ|ị/gi, 'i');
+    str = str.replace(/ó|ò|ỏ|õ|ọ|ô|ố|ồ|ổ|ỗ|ộ|ơ|ớ|ờ|ở|ỡ|ợ/gi, 'o');
+    str = str.replace(/ú|ù|ủ|ũ|ụ|ư|ứ|ừ|ử|ữ|ự/gi, 'u');
+    str = str.replace(/ý|ỳ|ỷ|ỹ|ỵ/gi, 'y');
+    str = str.replace(/đ/gi, 'd');
+    str = str.replace(/[^a-z0-9\s]/gi, '');
+    return str;
+  }
+});
+
+</script>
 
 </body>
 
