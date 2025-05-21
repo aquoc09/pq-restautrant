@@ -2,7 +2,7 @@ let listProducts = [];
 
 function initDashBoardProduct() {
   //Fetch dữ liệu từ file json
-  fetch('./data/Foods.json')
+  fetch('../data/Foods.json')
     .then((response) => response.json())
     .then((response) => {
       listProducts = response;
