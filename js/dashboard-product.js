@@ -30,7 +30,7 @@ function generateProductsDashBoard() {
         <tr>
                       <td>
                         <div class="product-image">
-                          <a href="dashboard-edit-product.html?id=${item.id}">
+                          <a href="#">
                             <img
                               src="${item.img}"
                               alt="${item.name}"
@@ -41,9 +41,7 @@ function generateProductsDashBoard() {
                       <td>
                         <div class="product-td">
                           <strong
-                            ><h6><a href="dashboard-edit-product.html?id=${
-                              item.id
-                            }">${item.name}</a></h6></strong
+                            ><h6>${item.name}</h6></strong
                           >
                         </div>
                       </td>
