@@ -1,5 +1,5 @@
 function initDashBoardProduct() {
-  fetch('../data/Orders.json')
+  fetch('./data/Orders.json')
     .then((response) => response.json())
     .then((response) => {
       listCategories = response;
