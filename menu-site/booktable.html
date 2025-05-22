@@ -45,6 +45,7 @@
             }
         }
     </style>
+    <link rel="icon" href="../img/logo/logo40x40-circle.png" type="image/png">
 </head>
 
 <body style="background-color: #EADEC5;">
@@ -56,56 +57,8 @@
         </div>
         <!-- navbar-expand-lg -->
         <nav class="navbar                      navbar-custom">
-            <div class="container-fluid">
-                <!-- Logo -->
-                <a class="navbar-brand d-flex align-items-center" href="../index.html">
-                    <div class="logo"></div>
-                </a>
-
-                <div class="hmenu navbar-expand-lg d-none d-lg-block">
-                    <ul class="navbar-nav flex-row">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../menu-site/saleoff.html">Ưu Đãi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../menu-site/order.html">Thực Đơn</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../menu-site/booktable.html">Đặt Bàn</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Toggle button (hamburger menu) -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../menu-site/saleoff.html">Ưu Đãi</a>
-                        </li>
-                        <!-- Dropdown menu for Thực Đơn -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="orderDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Thực Đơn
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="orderDropdown">
-                                <li><a class="dropdown-item" href="../menu-site/order.html">Gọi Món</a></li>
-                                <li><a class="dropdown-item" href="../menu-site/combo.html">Combo</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../menu-site/booktable.html">Đặt Bàn</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="../menu-site/about-site.html">Về chúng tôi</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="container-fluid" id="header-menu">
+                <!-- Code được generated bởi loadHeaderMenu(flag)  -->
             </div>
         </nav>
     </div>
@@ -130,47 +83,8 @@
                     aria-label="Nhập tên nhà hàng">
             </div>
             <div class="restaurant-scroll" style="max-height: 400px; overflow-y: auto; padding-right: 10px;">
-                <div class="restaurant-list">
-                    <div class="restaurant-item">
-                        <p><strong>PQ Trần Thái Tông</strong></p>
-                        <p>103D5A Trần Thái Tông, Dịch Vọng, Cầu Giấy, Hà Nội</p>
-                        <p>Open - Close: 09:00 - 22:00</p>
-                        <p>
-                            <a href="tel:02473007392" class="btn btn-outline-primary">012345678</a>
-                            <a href="./booking-form.html" class="btn btn-warning">Đặt bàn</a>
-                        </p>
-                    </div>
-
-                    <div class="restaurant-item">
-                        <p><strong>PQ Trần Thái Tông</strong></p>
-                        <p>103D5A Trần Thái Tông, Dịch Vọng, Cầu Giấy, Hà Nội</p>
-                        <p>Open - Close: 09:00 - 22:00</p>
-                        <p>
-                            <a href="tel:02473007392" class="btn btn-outline-primary">012345678</a>
-                            <a href="./booking-form.html" class="btn btn-warning">Đặt bàn</a>
-                        </p>
-                    </div>
-
-                    <div class="restaurant-item">
-                        <p><strong>PQ Nguyễn Trãi</strong></p>
-                        <p>456 Nguyễn Trãi, Quận 5, TP HCM</p>
-                        <p>Open - Close: 09:00 - 22:00</p>
-                        <p>
-                            <a href="tel:02812345678" class="btn btn-outline-primary">012345678</a>
-                            <a href="./booking-form.html" class="btn btn-warning">Đặt bàn</a>
-                        </p>
-                    </div>
-
-                    <div class="restaurant-item">
-                        <p><strong>PQ Phạm Văn Đồng</strong></p>
-                        <p>789 Phạm Văn Đồng, Thủ Đức, TP HCM</p>
-                        <p>Open - Close: 09:00 - 22:00</p>
-                        <p>
-                            <a href="tel:02887654321" class="btn btn-outline-primary">012345678</a>
-                            <a href="./booking-form.html" class="btn btn-warning">Đặt bàn</a>
-                        </p>
-                    </div>
-
+                <div class="restaurant-list" id="list-restaurants">
+                    
                     <!-- Các nhà hàng khác giữ nguyên -->
                 </div>
             </div>
@@ -247,7 +161,14 @@
     </script>
 
     <script src="../js/index-user.js"></script>
-    <script>loadUserHeader(2)</script>
+    <script src="../js/booktable.js"></script>
+    <script>
+        loadUserHeader(2);
+        loadHeaderMenu(2);
+        window.onload = function () {
+            loadBookingForm();
+        };
+    </script>
     
 
 </body>

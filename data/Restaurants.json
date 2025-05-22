@@ -1,0 +1,26 @@
+[
+  {
+    "name": "PQ Trần Thái Tông",
+    "address": "103D5A Trần Thái Tông, Dịch Vọng, Cầu Giấy, Hà Nội",
+    "hours": "09:00 - 22:00",
+    "phone": "012345678"
+  },
+  {
+    "name": "PQ Trần Thái Tông",
+    "address": "103D5A Trần Thái Tông, Dịch Vọng, Cầu Giấy, Hà Nội",
+    "hours": "09:00 - 22:00",
+    "phone": "012345678"
+  },
+  {
+    "name": "PQ Nguyễn Trãi",
+    "address": "456 Nguyễn Trãi, Quận 5, TP HCM",
+    "hours": "09:00 - 22:00",
+    "phone": "012345678"
+  },
+  {
+    "name": "PQ Phạm Văn Đồng",
+    "address": "789 Phạm Văn Đồng, Thủ Đức, TP HCM",
+    "hours": "09:00 - 22:00",
+    "phone": "012345678"
+  }
+]
