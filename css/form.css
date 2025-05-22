@@ -84,6 +84,10 @@
 
 }
 
+.showPassword{
+  color: #6f6e6e;
+}
+
 .btn-booking-form:hover {
   background-color: #dfcfb7;
 }
@@ -92,4 +96,5 @@
   color: red;
   font-size: 14px;
   margin-top: 5px;
+  font-style: italic;
 }

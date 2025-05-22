@@ -2,16 +2,22 @@
   {
     "id": 1,
     "username": "admin",
-    "password": "admin"
+    "password": "admin",
+    "fullName" : "",
+    "phone" : ""
   },
   {
     "id": 2,
     "username": "dh52201324",
-    "password": "dh52201324"
+    "password": "dh52201324",
+    "fullName" : "Nguyễn Võ Anh Quốc",
+    "phone" : "0393408654"
   },
   {
     "id": 3,
     "username": "dh52201248",
-    "password": "dh52201248"
+    "password": "dh52201248",
+    "fullName" : "Nguyễn Thanh Phúc",
+    "phone" : "0393456987"
   }
 ]

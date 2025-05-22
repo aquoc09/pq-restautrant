@@ -17,12 +17,12 @@ function loadUserHeader(flag) {
         } else if (username == 'admin') {
             user_header.innerHTML = `
             <a href="#" id="log-out" onclick="logoutConfirm(true)"><i class="bi bi-box-arrow-right"></i>Đăng xuất</a>
-            <a href="./header-site/user-form.html"><i class="bi bi-person-circle"></i>Tài khoản</a>
+            <a href="./header-site/user-form.html?id=`+username+`"><i class="bi bi-person-circle"></i>Tài khoản</a>
             <a href="./dashboard.html"><i class="bi bi-person-gear"></i>Admin</a>`;
         } else {
             user_header.innerHTML = `
             <a href="./index.html"><i class="bi bi-box-arrow-right"></i>Đăng xuất</a>
-            <a href="./header-site/user-form.html"><i class="bi bi-person-circle"></i>Tài khoản</a>`;
+            <a href="./header-site/user-form.html?id=`+username+`"><i class="bi bi-person-circle"></i>Tài khoản</a>`;
         }
     } else {
         if (username == null) {
@@ -32,12 +32,12 @@ function loadUserHeader(flag) {
         } else if (username == 'admin') {
             user_header.innerHTML = `
             <a href="#" id="log-out" onclick="logoutConfirm(false)"><i class="bi bi-box-arrow-right"></i>Đăng xuất</a>
-            <a href="../header-site/user-form.html"><i class="bi bi-person-circle"></i>Tài khoản</a>
+            <a href="../header-site/user-form.html?id=`+username+`"><i class="bi bi-person-circle"></i>Tài khoản</a>
             <a href="../dashboard.html"><i class="bi bi-person-gear"></i>Admin</a>`;
         } else {
             user_header.innerHTML = `
             <a href="../index.html"><i class="bi bi-box-arrow-right"></i>Đăng xuất</a>
-            <a href="../header-site/user-form.html"><i class="bi bi-person-circle"></i>Tài khoản</a>`;
+            <a href="../header-site/user-form.html?id=`+username+`"><i class="bi bi-person-circle"></i>Tài khoản</a>`;
         }
     }
 

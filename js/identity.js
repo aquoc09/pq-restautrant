@@ -50,8 +50,8 @@ function verifyLogin() {
 
             var matchedAccount = false;
 
-            for(var acc of listAccounts){
-                if(acc.username === account.username && acc.password === account.password){
+            for (var acc of listAccounts) {
+                if (acc.username === account.username && acc.password === account.password) {
                     matchedAccount = true;
                     break;
                 }
@@ -103,8 +103,8 @@ function verifyRegister() {
             passwordErrorMessage.innerHTML = '';
         }
 
-        if (!passwordRegex.test(confirmPassword)) {
-            confirmPasswordErrorMessage.innerHTML = 'Mật khẩu phải dài hơn 4 kí tự!';
+        if (!password == confirmPassword) {
+            confirmPasswordErrorMessage.innerHTML = 'Mật khẩu phải trùng nhau';
             isValid = false;
         } else {
             confirmPasswordErrorMessage.innerHTML = '';
@@ -131,9 +131,64 @@ function verifyRegister() {
             const title = document.getElementById('title-text-modal');
 
             title.innerHTML = 'Đã đăng kí thành công';
+
         }
-        this.reset()
+        this.reset();
     });
+}
+
+function showPassword() {
+    var togglePassword = document.getElementById('togglePassword');
+    var password = document.getElementById('password');
+
+    var type = password.getAttribute('type');
+
+    if(type === 'password'){
+        type = 'test';
+        password.setAttribute('type',type);
+        togglePassword.innerHTML = '    Ẩn mật khẩu'
+    }else{
+        type = 'password';
+        password.setAttribute('type',type);
+        togglePassword.innerHTML = '    Hiển thị mật khẩu'
+    }
+}
+
+function loadUserInfo(){
+    const queryString = window.location.search;  // ví dụ: ?id=admin
+
+    // Tạo đối tượng URLSearchParams để dễ thao tác
+    const urlParams = new URLSearchParams(queryString);
+
+    // Lấy giá trị param "id"
+    var userId = urlParams.get('id');
+
+    var username = document.getElementById('username');
+    var password = document.getElementById('password');
+    var fullName = document.getElementById('fullName');
+    var phone = document.getElementById('phone');
+
+    for(var acc of listAccounts){
+        if(acc.username === userId){
+            username.innerHTML = acc.username;
+            password.innerHTML = acc.password;
+            fullName.innerHTML = acc.fullName;
+            phone.innerHTML = acc.phone;
+            break;
+        }
+    }
+}
+
+function backToHomePage(){
+    const queryString = window.location.search;  // ví dụ: ?id=admin
+
+    // Tạo đối tượng URLSearchParams để dễ thao tác
+    const urlParams = new URLSearchParams(queryString);
+
+    // Lấy giá trị param "id"
+    var userId = urlParams.get('id');
+
+    window.location.href = '../index.html?id='+userId;
 }
 
 loadAccountData()

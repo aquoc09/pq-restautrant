@@ -25,6 +25,11 @@
   border-radius: 100%;
   border: 3px solid rgba(255, 213, 2, 1);
 }
+.header-dashboard .homepage a{
+  float: right;
+  text-decoration: none;
+  color: #555;
+}
 
 .admin-navigation {
   width: 250px;

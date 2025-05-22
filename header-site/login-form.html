@@ -103,6 +103,9 @@
             <div class="form-group">
                 <label for="password">Mật khẩu</label>
                 <input type="password" id="password" name="password" required />
+                <div class="showPassword">
+                <i class="bi bi-eye ms-2" id="togglePassword" style="cursor: pointer;" onclick="showPassword()">    Hiển thị mật khẩu</i>
+                </div>
                 <span class="error-message" id="passwordErrorMessage"></span>
             </div>
 
@@ -164,7 +167,7 @@
     </div>
 
     <!-- Javascript -->
-    <script src="../js/login.js"></script>
+    <script src="../js/identity.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 
     <script src="../js/index-user.js"></script>
